@@ -275,3 +275,19 @@ class Notification:
     #  @return Текст
     def get_message(self) -> str:
         return self._message
+
+
+## @brief Класс категории техники
+#  @details Используется для группировки моделей оборудования по типам.
+class Category:
+    ## @brief Конструктор
+    #  @param id Идентификатор категории
+    #  @param name Название категории
+    def __init__(self, id: int, name: str):
+        self._id = id      ##< ID категории
+        self._name = name  ##< Название категории
+
+    ## @brief Получить название категории
+    #  @return Название категории
+    def get_name(self) -> str:
+        return self._name
