@@ -61,3 +61,13 @@ class RentalService:
         if fine_amount > 0:
             fine = Fine(len(self._fines) + 1, "Повреждение", fine_amount)
             self._fines.append(fine)
+
+    ## @brief Проверить корректность дат аренды
+    #  @details Дата начала должна быть строго раньше даты окончания.
+    #  @param start_date Дата начала аренды
+    #  @param end_date Дата окончания аренды
+    #  @return True, если даты корректны, иначе False
+    def validate_dates(self, start_date: str, end_date: str) -> bool:
+        if not start_date or not end_date:
+            return False
+        return start_date < end_date
