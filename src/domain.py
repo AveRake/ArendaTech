@@ -46,7 +46,7 @@ class Person:
     #  @param email Новый email
     #  @return True, если успешно, иначе False
     def set_email(self, email: str) -> bool:
-        if not email:
+        if not email or "@" not in email:
             return False
         self._email = email
         return True
