@@ -6,4 +6,4 @@ venv/
 docs/
 .DS_Store
 .vscode/
-docs/
+docs/Doxyfile.bak
