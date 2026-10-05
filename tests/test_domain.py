@@ -1,4 +1,4 @@
-## @file test_domain.py
+ё## @file test_domain.py
 #  @brief Unit-тесты для модуля domain
 #  @author Колганов Иван
 #  @date 2025-10-02
