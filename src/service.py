@@ -62,7 +62,7 @@ class RentalService:
             fine = Fine(len(self._fines) + 1, "Повреждение", fine_amount)
             self._fines.append(fine)
 
-    ## @brief Проверить корректность дат аренды
+    ## @brief Проверить корректность дат на аренды
     #  @details Дата начала должна быть строго раньше даты окончания.
     #  @param start_date Дата начала аренды
     #  @param end_date Дата окончания аренды
