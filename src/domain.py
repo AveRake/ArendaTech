@@ -51,6 +51,9 @@ class Person:
         self._email = email
         return True
 
+    def get_email(self) -> str:
+        return self._email
+
     ## @brief Строковое представление
     #  @return Строка с ФИО
     def __str__(self) -> str:
