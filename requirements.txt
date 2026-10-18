@@ -1,0 +1,9 @@
+# ArendaTech dependencies (Python 3.10+).
+# This file is intentionally ASCII-only: pip 21.x on Windows reads it with the
+# system encoding (cp1251) and fails on non-ASCII characters.
+#
+# The code metrics analyzer (metrics/code_metrics.py) uses only the standard
+# library. pytest is required for the test suite, Pillow - for comparison
+# charts in metrics/compare_metrics.py.
+pytest>=7.0
+pillow>=9.0

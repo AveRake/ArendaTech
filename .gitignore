@@ -6,4 +6,9 @@ venv/
 docs/
 .DS_Store
 .vscode/
-docs/Doxyfile.bak
+.pytest_cache/
+.idea/
+data/
+*.egg-info/
+metrics/reports/current/
+reports/preview/
