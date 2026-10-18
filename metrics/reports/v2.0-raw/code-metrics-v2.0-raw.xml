@@ -1,0 +1,1337 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CodeMetricsReport Version="1.0">
+  <Targets>
+    <Target Name="ArendaTech">
+      <Assembly Name="ArendaTech">
+        <Metrics>
+          <Metric Name="MaintainabilityIndex" Value="3.12" />
+          <Metric Name="CyclomaticComplexity" Value="185" />
+          <Metric Name="ClassCoupling" Value="8" />
+          <Metric Name="DepthOfInheritance" Value="3" />
+          <Metric Name="SourceLines" Value="740" />
+          <Metric Name="ExecutableLines" Value="373" />
+          <Metric Name="HalsteadVolume" Value="31825.82" />
+          <Metric Name="CommentLines" Value="64" />
+        </Metrics>
+        <Namespaces>
+          <Namespace Name="src.__init__">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="99.87" />
+              <Metric Name="CyclomaticComplexity" Value="1" />
+              <Metric Name="ClassCoupling" Value="0" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="0" />
+              <Metric Name="ExecutableLines" Value="0" />
+              <Metric Name="HalsteadVolume" Value="0.0" />
+              <Metric Name="CommentLines" Value="0" />
+            </Metrics>
+            <Types>
+            </Types>
+          </Namespace>
+          <Namespace Name="src.description">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="67.64" />
+              <Metric Name="CyclomaticComplexity" Value="1" />
+              <Metric Name="ClassCoupling" Value="0" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="30" />
+              <Metric Name="ExecutableLines" Value="0" />
+              <Metric Name="HalsteadVolume" Value="0.0" />
+              <Metric Name="CommentLines" Value="30" />
+            </Metrics>
+            <Types>
+            </Types>
+          </Namespace>
+          <Namespace Name="src.domain">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="5.82" />
+              <Metric Name="CyclomaticComplexity" Value="85" />
+              <Metric Name="ClassCoupling" Value="2" />
+              <Metric Name="DepthOfInheritance" Value="3" />
+              <Metric Name="SourceLines" Value="310" />
+              <Metric Name="ExecutableLines" Value="127" />
+              <Metric Name="HalsteadVolume" Value="11379.72" />
+              <Metric Name="CommentLines" Value="12" />
+            </Metrics>
+            <Types>
+              <NamedType Name="Person" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="29">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="46.12" />
+                  <Metric Name="CyclomaticComplexity" Value="11" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="30" />
+                  <Metric Name="ExecutableLines" Value="14" />
+                  <Metric Name="HalsteadVolume" Value="761.04" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, fio: str, email: str, phone: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="30">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="68.85" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                      <Metric Name="HalsteadVolume" Value="178.41" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int get_id(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="36">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_fio(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="39">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_email(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="42">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool set_email(self, email: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="45">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="69.46" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                      <Metric Name="HalsteadVolume" Value="133.78" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_phone(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="51">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_role(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="54">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="82.65" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="33.22" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str __str__(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="57">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="82.65" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="33.22" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Student" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="61">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="54.1" />
+                  <Metric Name="CyclomaticComplexity" Value="5" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="16" />
+                  <Metric Name="ExecutableLines" Value="7" />
+                  <Metric Name="HalsteadVolume" Value="510.28" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, fio: str, email: str, phone: str, student_id: str, group: str, faculty: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="62">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="65.75" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                      <Metric Name="HalsteadVolume" Value="280.94" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_group(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="69">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_student_id(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="72">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_role(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="75">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="82.65" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="33.22" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Teacher" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="79">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="57.75" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="12" />
+                  <Metric Name="ExecutableLines" Value="5" />
+                  <Metric Name="HalsteadVolume" Value="394.2" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, fio: str, email: str, phone: str, department: str, position: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="80">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="68.04" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="5" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                      <Metric Name="HalsteadVolume" Value="233.38" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_department(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="86">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_role(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="89">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="82.65" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="33.22" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Administrator" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="93">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="59.89" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="2" />
+                  <Metric Name="SourceLines" Value="10" />
+                  <Metric Name="ExecutableLines" Value="4" />
+                  <Metric Name="HalsteadVolume" Value="343.13" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, fio: str, email: str, phone: str, employee_id: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="94">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="73.54" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="3" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                      <Metric Name="HalsteadVolume" Value="187.65" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_employee_id(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="98">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_role(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="101">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="82.65" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="33.22" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Technician" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="105">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="65.68" />
+                  <Metric Name="CyclomaticComplexity" Value="3" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="3" />
+                  <Metric Name="SourceLines" Value="6" />
+                  <Metric Name="ExecutableLines" Value="2" />
+                  <Metric Name="HalsteadVolume" Value="262.37" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, fio: str, email: str, phone: str, employee_id: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="106">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="77.72" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="168.0" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_role(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="109">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="82.65" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="33.22" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Category" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="113">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="59.53" />
+                  <Metric Name="CyclomaticComplexity" Value="4" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="11" />
+                  <Metric Name="ExecutableLines" Value="5" />
+                  <Metric Name="HalsteadVolume" Value="287.92" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, name: str, fragile: bool)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="114">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="71.52" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                      <Metric Name="HalsteadVolume" Value="148.68" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_name(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="119">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool is_fragile(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="122">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="EquipmentModel" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="126">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="50.09" />
+                  <Metric Name="CyclomaticComplexity" Value="7" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="23" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                  <Metric Name="HalsteadVolume" Value="564.78" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, name: str, category: str, characteristics: str, daily_rate: float)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="127">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64.93" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                      <Metric Name="HalsteadVolume" Value="227.43" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int get_id(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="135">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_name(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="138">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_category(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="141">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_characteristics(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="144">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="float get_daily_rate(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="147">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="EquipmentUnit" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="151">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="46.72" />
+                  <Metric Name="CyclomaticComplexity" Value="9" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="29" />
+                  <Metric Name="ExecutableLines" Value="12" />
+                  <Metric Name="HalsteadVolume" Value="759.13" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, inventory_number: str, model: EquipmentModel, status: str, available: bool)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="152">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64.88" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                      <Metric Name="HalsteadVolume" Value="230.7" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int get_id(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="160">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="EquipmentModel get_model(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="163">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_status(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="166">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None set_status(self, status: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="169">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80.62" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="64.73" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool is_available(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="172">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None set_available(self, available: bool)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="175">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80.62" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="64.73" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_inventory_number(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="178">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Request" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="182">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="38.92" />
+                  <Metric Name="CyclomaticComplexity" Value="14" />
+                  <Metric Name="ClassCoupling" Value="2" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="48" />
+                  <Metric Name="ExecutableLines" Value="23" />
+                  <Metric Name="HalsteadVolume" Value="1644.87" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, user: Person, units: List[EquipmentUnit], start_date: str, end_date: str, status: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="183">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="62.66" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="8" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                      <Metric Name="HalsteadVolume" Value="315.77" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int get_id(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="192">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Person get_user(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="195">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="List[EquipmentUnit] get_units(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="198">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.0" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="57.11" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_status(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="201">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None set_status(self, status: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="204">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80.62" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="64.73" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_start_date(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="207">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_end_date(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="210">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int days(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="213">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="71.49" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="4" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                      <Metric Name="HalsteadVolume" Value="150.12" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool period_overlaps(self, start_date: str, end_date: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="218">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="65.64" />
+                      <Metric Name="CyclomaticComplexity" Value="2" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                      <Metric Name="HalsteadVolume" Value="278.63" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None approve(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="225">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.62" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="46.6" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None reject(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="228">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.62" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="46.6" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Issue" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="232">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="44.82" />
+                  <Metric Name="CyclomaticComplexity" Value="10" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="33" />
+                  <Metric Name="ExecutableLines" Value="15" />
+                  <Metric Name="HalsteadVolume" Value="905.91" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, request: Request, issue_date: str, cost: float)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="233">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64.63" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                      <Metric Name="HalsteadVolume" Value="250.77" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int get_id(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="241">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Request get_request(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="244">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_issue_date(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="247">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_return_date(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="250">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_condition(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="253">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="float get_cost(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="256">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool is_open(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="259">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.62" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="46.6" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None close(self, return_date: str, condition: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="262">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="75.33" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="3" />
+                      <Metric Name="ExecutableLines" Value="2" />
+                      <Metric Name="HalsteadVolume" Value="104.0" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Fine" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="267">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="50.28" />
+                  <Metric Name="CyclomaticComplexity" Value="7" />
+                  <Metric Name="ClassCoupling" Value="1" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="22" />
+                  <Metric Name="ExecutableLines" Value="10" />
+                  <Metric Name="HalsteadVolume" Value="608.76" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, reason: str, amount: float, issue: Optional[Issue])" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="268">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="66.13" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                      <Metric Name="HalsteadVolume" Value="247.25" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int get_id(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="275">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_reason(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="278">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="float get_amount(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="281">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool is_paid(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="284">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None pay(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="287">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.62" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="46.6" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+              <NamedType Name="Notification" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="291">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="51.76" />
+                  <Metric Name="CyclomaticComplexity" Value="6" />
+                  <Metric Name="ClassCoupling" Value="0" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="20" />
+                  <Metric Name="ExecutableLines" Value="9" />
+                  <Metric Name="HalsteadVolume" Value="525.14" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="__init__(self, id: int, message: str, date: str, user_id: int, kind: str)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="292">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="64.65" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="5" />
+                      <Metric Name="HalsteadVolume" Value="248.8" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_message(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="300">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_date(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="303">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="int get_user_id(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="306">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str get_kind(self)" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="309">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="81.97" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="41.51" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+          <Namespace Name="src.main">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="34.12" />
+              <Metric Name="CyclomaticComplexity" Value="6" />
+              <Metric Name="ClassCoupling" Value="8" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="77" />
+              <Metric Name="ExecutableLines" Value="39" />
+              <Metric Name="HalsteadVolume" Value="2608.41" />
+              <Metric Name="CommentLines" Value="11" />
+            </Metrics>
+            <Types>
+              <Method Name="int main()" File="metrics/snapshots/v2_0_raw/src/main.py" Line="20">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="38.02" />
+                  <Metric Name="CyclomaticComplexity" Value="5" />
+                  <Metric Name="ClassCoupling" Value="8" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="54" />
+                  <Metric Name="ExecutableLines" Value="35" />
+                  <Metric Name="HalsteadVolume" Value="2282.92" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+              </Method>
+            </Types>
+          </Namespace>
+          <Namespace Name="src.service">
+            <Metrics>
+              <Metric Name="MaintainabilityIndex" Value="3.12" />
+              <Metric Name="CyclomaticComplexity" Value="92" />
+              <Metric Name="ClassCoupling" Value="7" />
+              <Metric Name="DepthOfInheritance" Value="1" />
+              <Metric Name="SourceLines" Value="323" />
+              <Metric Name="ExecutableLines" Value="207" />
+              <Metric Name="HalsteadVolume" Value="17837.69" />
+              <Metric Name="CommentLines" Value="11" />
+            </Metrics>
+            <Types>
+              <NamedType Name="RentalService" File="metrics/snapshots/v2_0_raw/src/service.py" Line="28">
+                <Metrics>
+                  <Metric Name="MaintainabilityIndex" Value="4.2" />
+                  <Metric Name="CyclomaticComplexity" Value="91" />
+                  <Metric Name="ClassCoupling" Value="7" />
+                  <Metric Name="DepthOfInheritance" Value="1" />
+                  <Metric Name="SourceLines" Value="296" />
+                  <Metric Name="ExecutableLines" Value="201" />
+                  <Metric Name="HalsteadVolume" Value="17160.56" />
+                  <Metric Name="CommentLines" Value="0" />
+                </Metrics>
+                <Members>
+                  <Method Name="None __init__(self)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="29">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="63.93" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="5" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                      <Metric Name="HalsteadVolume" Value="315.78" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None add_unit(self, unit: EquipmentUnit)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="37">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80.12" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="76.15" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="List[EquipmentUnit] get_units(self)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="40">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80.37" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="70.32" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="List[Request] get_requests(self)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="43">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80.37" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="70.32" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="List[Issue] get_issues(self)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="46">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80.37" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="70.32" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="List[Fine] get_fines(self)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="49">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="80.37" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="2" />
+                      <Metric Name="ExecutableLines" Value="1" />
+                      <Metric Name="HalsteadVolume" Value="70.32" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="List[Notification] get_notifications(self, user_id: Optional[int], kind: Optional[str])" File="metrics/snapshots/v2_0_raw/src/service.py" Line="52">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="59.16" />
+                      <Metric Name="CyclomaticComplexity" Value="6" />
+                      <Metric Name="ClassCoupling" Value="1" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="10" />
+                      <Metric Name="ExecutableLines" Value="8" />
+                      <Metric Name="HalsteadVolume" Value="400.08" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Notification _notify(self, user: Person, message: str, kind: str)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="63">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="65.42" />
+                      <Metric Name="CyclomaticComplexity" Value="1" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="6" />
+                      <Metric Name="ExecutableLines" Value="4" />
+                      <Metric Name="HalsteadVolume" Value="312.48" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="bool validate_dates(self, start_date: str, end_date: str)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="70">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="59.08" />
+                      <Metric Name="CyclomaticComplexity" Value="5" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="11" />
+                      <Metric Name="ExecutableLines" Value="9" />
+                      <Metric Name="HalsteadVolume" Value="318.95" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Request create_request(self, user: Person, units: List[EquipmentUnit], start_date: str, end_date: str)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="82">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="46.91" />
+                      <Metric Name="CyclomaticComplexity" Value="11" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="24" />
+                      <Metric Name="ExecutableLines" Value="21" />
+                      <Metric Name="HalsteadVolume" Value="1175.47" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None approve_request(self, request: Request, employee: Person)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="107">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="63.62" />
+                      <Metric Name="CyclomaticComplexity" Value="3" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="7" />
+                      <Metric Name="ExecutableLines" Value="6" />
+                      <Metric Name="HalsteadVolume" Value="320.0" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None reject_request(self, request: Request, employee: Person, reason: str)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="115">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="59.28" />
+                      <Metric Name="CyclomaticComplexity" Value="4" />
+                      <Metric Name="ClassCoupling" Value="3" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="10" />
+                      <Metric Name="ExecutableLines" Value="9" />
+                      <Metric Name="HalsteadVolume" Value="419.83" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="float estimate_cost(self, user: Person, units: List[EquipmentUnit], days: int)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="126">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="51.75" />
+                      <Metric Name="CyclomaticComplexity" Value="8" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="18" />
+                      <Metric Name="ExecutableLines" Value="17" />
+                      <Metric Name="HalsteadVolume" Value="671.62" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="Issue issue_equipment(self, request: Request, employee: Person, issue_date: str)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="145">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="49.98" />
+                      <Metric Name="CyclomaticComplexity" Value="6" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="20" />
+                      <Metric Name="ExecutableLines" Value="16" />
+                      <Metric Name="HalsteadVolume" Value="943.8" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None return_equipment(self, issue: Issue, return_date: str, condition: str)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="166">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="35.66" />
+                      <Metric Name="CyclomaticComplexity" Value="16" />
+                      <Metric Name="ClassCoupling" Value="2" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="56" />
+                      <Metric Name="ExecutableLines" Value="49" />
+                      <Metric Name="HalsteadVolume" Value="2727.08" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="str build_report(self)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="223">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="42.11" />
+                      <Metric Name="CyclomaticComplexity" Value="11" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="39" />
+                      <Metric Name="ExecutableLines" Value="28" />
+                      <Metric Name="HalsteadVolume" Value="1255.68" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None save_state(self, path: str)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="263">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="43.29" />
+                      <Metric Name="CyclomaticComplexity" Value="5" />
+                      <Metric Name="ClassCoupling" Value="0" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="36" />
+                      <Metric Name="ExecutableLines" Value="3" />
+                      <Metric Name="HalsteadVolume" Value="1425.25" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                  <Method Name="None load_state(self, path: str)" File="metrics/snapshots/v2_0_raw/src/service.py" Line="300">
+                    <Metrics>
+                      <Metric Name="MaintainabilityIndex" Value="46.25" />
+                      <Metric Name="CyclomaticComplexity" Value="8" />
+                      <Metric Name="ClassCoupling" Value="4" />
+                      <Metric Name="DepthOfInheritance" Value="1" />
+                      <Metric Name="SourceLines" Value="24" />
+                      <Metric Name="ExecutableLines" Value="20" />
+                      <Metric Name="HalsteadVolume" Value="1667.63" />
+                      <Metric Name="CommentLines" Value="0" />
+                    </Metrics>
+                  </Method>
+                </Members>
+              </NamedType>
+            </Types>
+          </Namespace>
+        </Namespaces>
+      </Assembly>
+    </Target>
+  </Targets>
+  <RuleViolations>
+    <Violation Rule="CA1505" Severity="warning" Metric="MaintainabilityIndex" Value="5.82" Threshold="20" Entity="src.domain" File="metrics/snapshots/v2_0_raw/src/domain.py" Line="1" />
+    <Violation Rule="CA1505" Severity="warning" Metric="MaintainabilityIndex" Value="3.12" Threshold="20" Entity="src.service" File="metrics/snapshots/v2_0_raw/src/service.py" Line="1" />
+    <Violation Rule="CA1505" Severity="warning" Metric="MaintainabilityIndex" Value="4.20" Threshold="20" Entity="RentalService" File="metrics/snapshots/v2_0_raw/src/service.py" Line="28" />
+    <Violation Rule="CA1502" Severity="error" Metric="CyclomaticComplexity" Value="11.00" Threshold="10" Entity="RentalService.create_request" File="metrics/snapshots/v2_0_raw/src/service.py" Line="82" />
+    <Violation Rule="CA1502" Severity="error" Metric="CyclomaticComplexity" Value="16.00" Threshold="10" Entity="RentalService.return_equipment" File="metrics/snapshots/v2_0_raw/src/service.py" Line="166" />
+    <Violation Rule="CA1502" Severity="error" Metric="CyclomaticComplexity" Value="11.00" Threshold="10" Entity="RentalService.build_report" File="metrics/snapshots/v2_0_raw/src/service.py" Line="223" />
+  </RuleViolations>
+</CodeMetricsReport>

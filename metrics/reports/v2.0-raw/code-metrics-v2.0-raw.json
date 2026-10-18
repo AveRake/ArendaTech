@@ -1,0 +1,2109 @@
+{
+  "project": "ArendaTech",
+  "modules": [
+    {
+      "kind": "module",
+      "name": "__init__",
+      "qualname": "src.__init__",
+      "file": "metrics/snapshots/v2_0_raw/src/__init__.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 99.87,
+        "cyclomatic_complexity": 1,
+        "class_coupling": 0,
+        "depth_of_inheritance": 1,
+        "source_lines": 0,
+        "executable_lines": 0,
+        "halstead_volume": 0.0,
+        "comment_lines": 0
+      },
+      "children": []
+    },
+    {
+      "kind": "module",
+      "name": "description",
+      "qualname": "src.description",
+      "file": "metrics/snapshots/v2_0_raw/src/description.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 67.64,
+        "cyclomatic_complexity": 1,
+        "class_coupling": 0,
+        "depth_of_inheritance": 1,
+        "source_lines": 30,
+        "executable_lines": 0,
+        "halstead_volume": 0.0,
+        "comment_lines": 30
+      },
+      "children": []
+    },
+    {
+      "kind": "module",
+      "name": "domain",
+      "qualname": "src.domain",
+      "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 5.82,
+        "cyclomatic_complexity": 85,
+        "class_coupling": 2,
+        "depth_of_inheritance": 3,
+        "source_lines": 310,
+        "executable_lines": 127,
+        "halstead_volume": 11379.72,
+        "comment_lines": 12
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "Person",
+          "qualname": "Person",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 29,
+          "signature": "Person",
+          "metrics": {
+            "maintainability_index": 46.12,
+            "cyclomatic_complexity": 11,
+            "class_coupling": 0,
+            "depth_of_inheritance": 1,
+            "source_lines": 30,
+            "executable_lines": 14,
+            "halstead_volume": 761.04,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Person.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 30,
+              "signature": "__init__(self, id: int, fio: str, email: str, phone: str)",
+              "metrics": {
+                "maintainability_index": 68.85,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 4,
+                "halstead_volume": 178.41,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_id",
+              "qualname": "Person.get_id",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 36,
+              "signature": "int get_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_fio",
+              "qualname": "Person.get_fio",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 39,
+              "signature": "str get_fio(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_email",
+              "qualname": "Person.get_email",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 42,
+              "signature": "str get_email(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "set_email",
+              "qualname": "Person.set_email",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 45,
+              "signature": "bool set_email(self, email: str)",
+              "metrics": {
+                "maintainability_index": 69.46,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 4,
+                "halstead_volume": 133.78,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_phone",
+              "qualname": "Person.get_phone",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 51,
+              "signature": "str get_phone(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_role",
+              "qualname": "Person.get_role",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 54,
+              "signature": "str get_role(self)",
+              "metrics": {
+                "maintainability_index": 82.65,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 33.22,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "__str__",
+              "qualname": "Person.__str__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 57,
+              "signature": "str __str__(self)",
+              "metrics": {
+                "maintainability_index": 82.65,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 33.22,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Student",
+          "qualname": "Student",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 61,
+          "signature": "Student",
+          "metrics": {
+            "maintainability_index": 54.1,
+            "cyclomatic_complexity": 5,
+            "class_coupling": 1,
+            "depth_of_inheritance": 2,
+            "source_lines": 16,
+            "executable_lines": 7,
+            "halstead_volume": 510.28,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Student.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 62,
+              "signature": "__init__(self, id: int, fio: str, email: str, phone: str, student_id: str, group: str, faculty: str)",
+              "metrics": {
+                "maintainability_index": 65.75,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 4,
+                "halstead_volume": 280.94,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_group",
+              "qualname": "Student.get_group",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 69,
+              "signature": "str get_group(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_student_id",
+              "qualname": "Student.get_student_id",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 72,
+              "signature": "str get_student_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_role",
+              "qualname": "Student.get_role",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 75,
+              "signature": "str get_role(self)",
+              "metrics": {
+                "maintainability_index": 82.65,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 33.22,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Teacher",
+          "qualname": "Teacher",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 79,
+          "signature": "Teacher",
+          "metrics": {
+            "maintainability_index": 57.75,
+            "cyclomatic_complexity": 4,
+            "class_coupling": 1,
+            "depth_of_inheritance": 2,
+            "source_lines": 12,
+            "executable_lines": 5,
+            "halstead_volume": 394.2,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Teacher.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 80,
+              "signature": "__init__(self, id: int, fio: str, email: str, phone: str, department: str, position: str)",
+              "metrics": {
+                "maintainability_index": 68.04,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 3,
+                "halstead_volume": 233.38,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_department",
+              "qualname": "Teacher.get_department",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 86,
+              "signature": "str get_department(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_role",
+              "qualname": "Teacher.get_role",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 89,
+              "signature": "str get_role(self)",
+              "metrics": {
+                "maintainability_index": 82.65,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 33.22,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Administrator",
+          "qualname": "Administrator",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 93,
+          "signature": "Administrator",
+          "metrics": {
+            "maintainability_index": 59.89,
+            "cyclomatic_complexity": 4,
+            "class_coupling": 1,
+            "depth_of_inheritance": 2,
+            "source_lines": 10,
+            "executable_lines": 4,
+            "halstead_volume": 343.13,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Administrator.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 94,
+              "signature": "__init__(self, id: int, fio: str, email: str, phone: str, employee_id: str)",
+              "metrics": {
+                "maintainability_index": 73.54,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 2,
+                "halstead_volume": 187.65,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_employee_id",
+              "qualname": "Administrator.get_employee_id",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 98,
+              "signature": "str get_employee_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_role",
+              "qualname": "Administrator.get_role",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 101,
+              "signature": "str get_role(self)",
+              "metrics": {
+                "maintainability_index": 82.65,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 33.22,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Technician",
+          "qualname": "Technician",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 105,
+          "signature": "Technician",
+          "metrics": {
+            "maintainability_index": 65.68,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 1,
+            "depth_of_inheritance": 3,
+            "source_lines": 6,
+            "executable_lines": 2,
+            "halstead_volume": 262.37,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Technician.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 106,
+              "signature": "__init__(self, id: int, fio: str, email: str, phone: str, employee_id: str)",
+              "metrics": {
+                "maintainability_index": 77.72,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 168.0,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_role",
+              "qualname": "Technician.get_role",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 109,
+              "signature": "str get_role(self)",
+              "metrics": {
+                "maintainability_index": 82.65,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 33.22,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Category",
+          "qualname": "Category",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 113,
+          "signature": "Category",
+          "metrics": {
+            "maintainability_index": 59.53,
+            "cyclomatic_complexity": 4,
+            "class_coupling": 0,
+            "depth_of_inheritance": 1,
+            "source_lines": 11,
+            "executable_lines": 5,
+            "halstead_volume": 287.92,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Category.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 114,
+              "signature": "__init__(self, id: int, name: str, fragile: bool)",
+              "metrics": {
+                "maintainability_index": 71.52,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 4,
+                "executable_lines": 3,
+                "halstead_volume": 148.68,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_name",
+              "qualname": "Category.get_name",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 119,
+              "signature": "str get_name(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "is_fragile",
+              "qualname": "Category.is_fragile",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 122,
+              "signature": "bool is_fragile(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "EquipmentModel",
+          "qualname": "EquipmentModel",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 126,
+          "signature": "EquipmentModel",
+          "metrics": {
+            "maintainability_index": 50.09,
+            "cyclomatic_complexity": 7,
+            "class_coupling": 0,
+            "depth_of_inheritance": 1,
+            "source_lines": 23,
+            "executable_lines": 10,
+            "halstead_volume": 564.78,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "EquipmentModel.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 127,
+              "signature": "__init__(self, id: int, name: str, category: str, characteristics: str, daily_rate: float)",
+              "metrics": {
+                "maintainability_index": 64.93,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 7,
+                "executable_lines": 5,
+                "halstead_volume": 227.43,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_id",
+              "qualname": "EquipmentModel.get_id",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 135,
+              "signature": "int get_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_name",
+              "qualname": "EquipmentModel.get_name",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 138,
+              "signature": "str get_name(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_category",
+              "qualname": "EquipmentModel.get_category",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 141,
+              "signature": "str get_category(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_characteristics",
+              "qualname": "EquipmentModel.get_characteristics",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 144,
+              "signature": "str get_characteristics(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_daily_rate",
+              "qualname": "EquipmentModel.get_daily_rate",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 147,
+              "signature": "float get_daily_rate(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "EquipmentUnit",
+          "qualname": "EquipmentUnit",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 151,
+          "signature": "EquipmentUnit",
+          "metrics": {
+            "maintainability_index": 46.72,
+            "cyclomatic_complexity": 9,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 29,
+            "executable_lines": 12,
+            "halstead_volume": 759.13,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "EquipmentUnit.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 152,
+              "signature": "__init__(self, id: int, inventory_number: str, model: EquipmentModel, status: str, available: bool)",
+              "metrics": {
+                "maintainability_index": 64.88,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 7,
+                "executable_lines": 5,
+                "halstead_volume": 230.7,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_id",
+              "qualname": "EquipmentUnit.get_id",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 160,
+              "signature": "int get_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_model",
+              "qualname": "EquipmentUnit.get_model",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 163,
+              "signature": "EquipmentModel get_model(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_status",
+              "qualname": "EquipmentUnit.get_status",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 166,
+              "signature": "str get_status(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "set_status",
+              "qualname": "EquipmentUnit.set_status",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 169,
+              "signature": "None set_status(self, status: str)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "is_available",
+              "qualname": "EquipmentUnit.is_available",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 172,
+              "signature": "bool is_available(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "set_available",
+              "qualname": "EquipmentUnit.set_available",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 175,
+              "signature": "None set_available(self, available: bool)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_inventory_number",
+              "qualname": "EquipmentUnit.get_inventory_number",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 178,
+              "signature": "str get_inventory_number(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Request",
+          "qualname": "Request",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 182,
+          "signature": "Request",
+          "metrics": {
+            "maintainability_index": 38.92,
+            "cyclomatic_complexity": 14,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 48,
+            "executable_lines": 23,
+            "halstead_volume": 1644.87,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Request.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 183,
+              "signature": "__init__(self, id: int, user: Person, units: List[EquipmentUnit], start_date: str, end_date: str, status: str)",
+              "metrics": {
+                "maintainability_index": 62.66,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 8,
+                "executable_lines": 6,
+                "halstead_volume": 315.77,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_id",
+              "qualname": "Request.get_id",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 192,
+              "signature": "int get_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_user",
+              "qualname": "Request.get_user",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 195,
+              "signature": "Person get_user(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_units",
+              "qualname": "Request.get_units",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 198,
+              "signature": "List[EquipmentUnit] get_units(self)",
+              "metrics": {
+                "maintainability_index": 81.0,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 57.11,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_status",
+              "qualname": "Request.get_status",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 201,
+              "signature": "str get_status(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "set_status",
+              "qualname": "Request.set_status",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 204,
+              "signature": "None set_status(self, status: str)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_start_date",
+              "qualname": "Request.get_start_date",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 207,
+              "signature": "str get_start_date(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_end_date",
+              "qualname": "Request.get_end_date",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 210,
+              "signature": "str get_end_date(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "days",
+              "qualname": "Request.days",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 213,
+              "signature": "int days(self)",
+              "metrics": {
+                "maintainability_index": 71.49,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 4,
+                "executable_lines": 3,
+                "halstead_volume": 150.12,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "period_overlaps",
+              "qualname": "Request.period_overlaps",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 218,
+              "signature": "bool period_overlaps(self, start_date: str, end_date: str)",
+              "metrics": {
+                "maintainability_index": 65.64,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 5,
+                "halstead_volume": 278.63,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "approve",
+              "qualname": "Request.approve",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 225,
+              "signature": "None approve(self)",
+              "metrics": {
+                "maintainability_index": 81.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 46.6,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "reject",
+              "qualname": "Request.reject",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 228,
+              "signature": "None reject(self)",
+              "metrics": {
+                "maintainability_index": 81.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 46.6,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Issue",
+          "qualname": "Issue",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 232,
+          "signature": "Issue",
+          "metrics": {
+            "maintainability_index": 44.82,
+            "cyclomatic_complexity": 10,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 33,
+            "executable_lines": 15,
+            "halstead_volume": 905.91,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Issue.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 233,
+              "signature": "__init__(self, id: int, request: Request, issue_date: str, cost: float)",
+              "metrics": {
+                "maintainability_index": 64.63,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 7,
+                "executable_lines": 6,
+                "halstead_volume": 250.77,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_id",
+              "qualname": "Issue.get_id",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 241,
+              "signature": "int get_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_request",
+              "qualname": "Issue.get_request",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 244,
+              "signature": "Request get_request(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_issue_date",
+              "qualname": "Issue.get_issue_date",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 247,
+              "signature": "str get_issue_date(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_return_date",
+              "qualname": "Issue.get_return_date",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 250,
+              "signature": "str get_return_date(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_condition",
+              "qualname": "Issue.get_condition",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 253,
+              "signature": "str get_condition(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_cost",
+              "qualname": "Issue.get_cost",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 256,
+              "signature": "float get_cost(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "is_open",
+              "qualname": "Issue.is_open",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 259,
+              "signature": "bool is_open(self)",
+              "metrics": {
+                "maintainability_index": 81.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 46.6,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "close",
+              "qualname": "Issue.close",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 262,
+              "signature": "None close(self, return_date: str, condition: str)",
+              "metrics": {
+                "maintainability_index": 75.33,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 2,
+                "halstead_volume": 104.0,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Fine",
+          "qualname": "Fine",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 267,
+          "signature": "Fine",
+          "metrics": {
+            "maintainability_index": 50.28,
+            "cyclomatic_complexity": 7,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 22,
+            "executable_lines": 10,
+            "halstead_volume": 608.76,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Fine.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 268,
+              "signature": "__init__(self, id: int, reason: str, amount: float, issue: Optional[Issue])",
+              "metrics": {
+                "maintainability_index": 66.13,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 5,
+                "halstead_volume": 247.25,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_id",
+              "qualname": "Fine.get_id",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 275,
+              "signature": "int get_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_reason",
+              "qualname": "Fine.get_reason",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 278,
+              "signature": "str get_reason(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_amount",
+              "qualname": "Fine.get_amount",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 281,
+              "signature": "float get_amount(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "is_paid",
+              "qualname": "Fine.is_paid",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 284,
+              "signature": "bool is_paid(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "pay",
+              "qualname": "Fine.pay",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 287,
+              "signature": "None pay(self)",
+              "metrics": {
+                "maintainability_index": 81.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 46.6,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Notification",
+          "qualname": "Notification",
+          "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+          "line": 291,
+          "signature": "Notification",
+          "metrics": {
+            "maintainability_index": 51.76,
+            "cyclomatic_complexity": 6,
+            "class_coupling": 0,
+            "depth_of_inheritance": 1,
+            "source_lines": 20,
+            "executable_lines": 9,
+            "halstead_volume": 525.14,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Notification.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 292,
+              "signature": "__init__(self, id: int, message: str, date: str, user_id: int, kind: str)",
+              "metrics": {
+                "maintainability_index": 64.65,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 7,
+                "executable_lines": 5,
+                "halstead_volume": 248.8,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_message",
+              "qualname": "Notification.get_message",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 300,
+              "signature": "str get_message(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_date",
+              "qualname": "Notification.get_date",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 303,
+              "signature": "str get_date(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_user_id",
+              "qualname": "Notification.get_user_id",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 306,
+              "signature": "int get_user_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_kind",
+              "qualname": "Notification.get_kind",
+              "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+              "line": 309,
+              "signature": "str get_kind(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "main",
+      "qualname": "src.main",
+      "file": "metrics/snapshots/v2_0_raw/src/main.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 34.12,
+        "cyclomatic_complexity": 6,
+        "class_coupling": 8,
+        "depth_of_inheritance": 1,
+        "source_lines": 77,
+        "executable_lines": 39,
+        "halstead_volume": 2608.41,
+        "comment_lines": 11
+      },
+      "children": [
+        {
+          "kind": "function",
+          "name": "main",
+          "qualname": "main",
+          "file": "metrics/snapshots/v2_0_raw/src/main.py",
+          "line": 20,
+          "signature": "int main()",
+          "metrics": {
+            "maintainability_index": 38.02,
+            "cyclomatic_complexity": 5,
+            "class_coupling": 8,
+            "depth_of_inheritance": 1,
+            "source_lines": 54,
+            "executable_lines": 35,
+            "halstead_volume": 2282.92,
+            "comment_lines": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "service",
+      "qualname": "src.service",
+      "file": "metrics/snapshots/v2_0_raw/src/service.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 3.12,
+        "cyclomatic_complexity": 92,
+        "class_coupling": 7,
+        "depth_of_inheritance": 1,
+        "source_lines": 323,
+        "executable_lines": 207,
+        "halstead_volume": 17837.69,
+        "comment_lines": 11
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "RentalService",
+          "qualname": "RentalService",
+          "file": "metrics/snapshots/v2_0_raw/src/service.py",
+          "line": 28,
+          "signature": "RentalService",
+          "metrics": {
+            "maintainability_index": 4.2,
+            "cyclomatic_complexity": 91,
+            "class_coupling": 7,
+            "depth_of_inheritance": 1,
+            "source_lines": 296,
+            "executable_lines": 201,
+            "halstead_volume": 17160.56,
+            "comment_lines": 0
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "RentalService.__init__",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 29,
+              "signature": "None __init__(self)",
+              "metrics": {
+                "maintainability_index": 63.93,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 5,
+                "depth_of_inheritance": 1,
+                "source_lines": 7,
+                "executable_lines": 6,
+                "halstead_volume": 315.78,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "add_unit",
+              "qualname": "RentalService.add_unit",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 37,
+              "signature": "None add_unit(self, unit: EquipmentUnit)",
+              "metrics": {
+                "maintainability_index": 80.12,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 76.15,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_units",
+              "qualname": "RentalService.get_units",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 40,
+              "signature": "List[EquipmentUnit] get_units(self)",
+              "metrics": {
+                "maintainability_index": 80.37,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 70.32,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_requests",
+              "qualname": "RentalService.get_requests",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 43,
+              "signature": "List[Request] get_requests(self)",
+              "metrics": {
+                "maintainability_index": 80.37,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 70.32,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_issues",
+              "qualname": "RentalService.get_issues",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 46,
+              "signature": "List[Issue] get_issues(self)",
+              "metrics": {
+                "maintainability_index": 80.37,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 70.32,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_fines",
+              "qualname": "RentalService.get_fines",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 49,
+              "signature": "List[Fine] get_fines(self)",
+              "metrics": {
+                "maintainability_index": 80.37,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 70.32,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_notifications",
+              "qualname": "RentalService.get_notifications",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 52,
+              "signature": "List[Notification] get_notifications(self, user_id: Optional[int], kind: Optional[str])",
+              "metrics": {
+                "maintainability_index": 59.16,
+                "cyclomatic_complexity": 6,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 10,
+                "executable_lines": 8,
+                "halstead_volume": 400.08,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "_notify",
+              "qualname": "RentalService._notify",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 63,
+              "signature": "Notification _notify(self, user: Person, message: str, kind: str)",
+              "metrics": {
+                "maintainability_index": 65.42,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 4,
+                "halstead_volume": 312.48,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "validate_dates",
+              "qualname": "RentalService.validate_dates",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 70,
+              "signature": "bool validate_dates(self, start_date: str, end_date: str)",
+              "metrics": {
+                "maintainability_index": 59.08,
+                "cyclomatic_complexity": 5,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 11,
+                "executable_lines": 9,
+                "halstead_volume": 318.95,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "create_request",
+              "qualname": "RentalService.create_request",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 82,
+              "signature": "Request create_request(self, user: Person, units: List[EquipmentUnit], start_date: str, end_date: str)",
+              "metrics": {
+                "maintainability_index": 46.91,
+                "cyclomatic_complexity": 11,
+                "class_coupling": 3,
+                "depth_of_inheritance": 1,
+                "source_lines": 24,
+                "executable_lines": 21,
+                "halstead_volume": 1175.47,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "approve_request",
+              "qualname": "RentalService.approve_request",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 107,
+              "signature": "None approve_request(self, request: Request, employee: Person)",
+              "metrics": {
+                "maintainability_index": 63.62,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 3,
+                "depth_of_inheritance": 1,
+                "source_lines": 7,
+                "executable_lines": 6,
+                "halstead_volume": 320.0,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "reject_request",
+              "qualname": "RentalService.reject_request",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 115,
+              "signature": "None reject_request(self, request: Request, employee: Person, reason: str)",
+              "metrics": {
+                "maintainability_index": 59.28,
+                "cyclomatic_complexity": 4,
+                "class_coupling": 3,
+                "depth_of_inheritance": 1,
+                "source_lines": 10,
+                "executable_lines": 9,
+                "halstead_volume": 419.83,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "estimate_cost",
+              "qualname": "RentalService.estimate_cost",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 126,
+              "signature": "float estimate_cost(self, user: Person, units: List[EquipmentUnit], days: int)",
+              "metrics": {
+                "maintainability_index": 51.75,
+                "cyclomatic_complexity": 8,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 18,
+                "executable_lines": 17,
+                "halstead_volume": 671.62,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "issue_equipment",
+              "qualname": "RentalService.issue_equipment",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 145,
+              "signature": "Issue issue_equipment(self, request: Request, employee: Person, issue_date: str)",
+              "metrics": {
+                "maintainability_index": 49.98,
+                "cyclomatic_complexity": 6,
+                "class_coupling": 4,
+                "depth_of_inheritance": 1,
+                "source_lines": 20,
+                "executable_lines": 16,
+                "halstead_volume": 943.8,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "return_equipment",
+              "qualname": "RentalService.return_equipment",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 166,
+              "signature": "None return_equipment(self, issue: Issue, return_date: str, condition: str)",
+              "metrics": {
+                "maintainability_index": 35.66,
+                "cyclomatic_complexity": 16,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 56,
+                "executable_lines": 49,
+                "halstead_volume": 2727.08,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "build_report",
+              "qualname": "RentalService.build_report",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 223,
+              "signature": "str build_report(self)",
+              "metrics": {
+                "maintainability_index": 42.11,
+                "cyclomatic_complexity": 11,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 39,
+                "executable_lines": 28,
+                "halstead_volume": 1255.68,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "save_state",
+              "qualname": "RentalService.save_state",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 263,
+              "signature": "None save_state(self, path: str)",
+              "metrics": {
+                "maintainability_index": 43.29,
+                "cyclomatic_complexity": 5,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 36,
+                "executable_lines": 3,
+                "halstead_volume": 1425.25,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "load_state",
+              "qualname": "RentalService.load_state",
+              "file": "metrics/snapshots/v2_0_raw/src/service.py",
+              "line": 300,
+              "signature": "None load_state(self, path: str)",
+              "metrics": {
+                "maintainability_index": 46.25,
+                "cyclomatic_complexity": 8,
+                "class_coupling": 4,
+                "depth_of_inheritance": 1,
+                "source_lines": 24,
+                "executable_lines": 20,
+                "halstead_volume": 1667.63,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "violations": [
+    {
+      "rule": "CA1505",
+      "title": "Код трудно сопровождать",
+      "severity": "warning",
+      "metric": "MaintainabilityIndex",
+      "value": 5.82,
+      "threshold": 20.0,
+      "entity": "src.domain",
+      "file": "metrics/snapshots/v2_0_raw/src/domain.py",
+      "line": 1,
+      "message": "Индекс сопровождаемости src.domain равен 5.8, минимальный порог — 20."
+    },
+    {
+      "rule": "CA1505",
+      "title": "Код трудно сопровождать",
+      "severity": "warning",
+      "metric": "MaintainabilityIndex",
+      "value": 3.12,
+      "threshold": 20.0,
+      "entity": "src.service",
+      "file": "metrics/snapshots/v2_0_raw/src/service.py",
+      "line": 1,
+      "message": "Индекс сопровождаемости src.service равен 3.1, минимальный порог — 20."
+    },
+    {
+      "rule": "CA1505",
+      "title": "Код трудно сопровождать",
+      "severity": "warning",
+      "metric": "MaintainabilityIndex",
+      "value": 4.2,
+      "threshold": 20.0,
+      "entity": "RentalService",
+      "file": "metrics/snapshots/v2_0_raw/src/service.py",
+      "line": 28,
+      "message": "Индекс сопровождаемости RentalService равен 4.2, минимальный порог — 20."
+    },
+    {
+      "rule": "CA1502",
+      "title": "Избыточная сложность",
+      "severity": "error",
+      "metric": "CyclomaticComplexity",
+      "value": 11,
+      "threshold": 10.0,
+      "entity": "RentalService.create_request",
+      "file": "metrics/snapshots/v2_0_raw/src/service.py",
+      "line": 82,
+      "message": "Цикломатическая сложность метода RentalService.create_request равна 11, порог — 10; метод трудно тестировать."
+    },
+    {
+      "rule": "CA1502",
+      "title": "Избыточная сложность",
+      "severity": "error",
+      "metric": "CyclomaticComplexity",
+      "value": 16,
+      "threshold": 10.0,
+      "entity": "RentalService.return_equipment",
+      "file": "metrics/snapshots/v2_0_raw/src/service.py",
+      "line": 166,
+      "message": "Цикломатическая сложность метода RentalService.return_equipment равна 16, порог — 10; метод трудно тестировать."
+    },
+    {
+      "rule": "CA1502",
+      "title": "Избыточная сложность",
+      "severity": "error",
+      "metric": "CyclomaticComplexity",
+      "value": 11,
+      "threshold": 10.0,
+      "entity": "RentalService.build_report",
+      "file": "metrics/snapshots/v2_0_raw/src/service.py",
+      "line": 223,
+      "message": "Цикломатическая сложность метода RentalService.build_report равна 11, порог — 10; метод трудно тестировать."
+    }
+  ]
+}

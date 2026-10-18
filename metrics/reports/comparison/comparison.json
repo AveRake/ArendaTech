@@ -1,0 +1,77 @@
+{
+  "labels": [
+    "v1.0 (ЛР2)",
+    "v2.0 черновик",
+    "v2.0 итог"
+  ],
+  "aggregates": [
+    {
+      "modules": 5,
+      "classes": 13,
+      "members": 36,
+      "sloc": 435,
+      "executable_lines": 105,
+      "cc_total": 59,
+      "cc_max": 3,
+      "cc_mean": 1.14,
+      "cc_over_10": 0,
+      "coupling_max": 4,
+      "dit_max": 3,
+      "mi_avg": 52.2,
+      "mi_min": 13.7,
+      "mi_green_share": 80.0,
+      "mi_members_avg": 74.5,
+      "mi_members_min": 52.2,
+      "members_red_zone": 0,
+      "violations": 1,
+      "violations_by_rule": {
+        "CA1505": 1
+      }
+    },
+    {
+      "modules": 5,
+      "classes": 13,
+      "members": 88,
+      "sloc": 740,
+      "executable_lines": 373,
+      "cc_total": 185,
+      "cc_max": 16,
+      "cc_mean": 1.9,
+      "cc_over_10": 3,
+      "coupling_max": 7,
+      "dit_max": 3,
+      "mi_avg": 42.1,
+      "mi_min": 3.1,
+      "mi_green_share": 60.0,
+      "mi_members_avg": 74.6,
+      "mi_members_min": 35.7,
+      "members_red_zone": 0,
+      "violations": 6,
+      "violations_by_rule": {
+        "CA1505": 3,
+        "CA1502": 3
+      }
+    },
+    {
+      "modules": 29,
+      "classes": 46,
+      "members": 194,
+      "sloc": 2655,
+      "executable_lines": 679,
+      "cc_total": 390,
+      "cc_max": 9,
+      "cc_mean": 1.62,
+      "cc_over_10": 0,
+      "coupling_max": 16,
+      "dit_max": 3,
+      "mi_avg": 36.8,
+      "mi_min": 21.0,
+      "mi_green_share": 100.0,
+      "mi_members_avg": 73.4,
+      "mi_members_min": 43.1,
+      "members_red_zone": 0,
+      "violations": 0,
+      "violations_by_rule": {}
+    }
+  ]
+}

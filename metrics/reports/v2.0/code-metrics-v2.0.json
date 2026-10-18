@@ -1,0 +1,5174 @@
+{
+  "project": "ArendaTech",
+  "modules": [
+    {
+      "kind": "module",
+      "name": "__init__",
+      "qualname": "src.__init__",
+      "file": "src/__init__.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 99.87,
+        "cyclomatic_complexity": 1,
+        "class_coupling": 0,
+        "depth_of_inheritance": 1,
+        "source_lines": 0,
+        "executable_lines": 0,
+        "halstead_volume": 0.0,
+        "comment_lines": 0
+      },
+      "children": []
+    },
+    {
+      "kind": "module",
+      "name": "cli",
+      "qualname": "src.cli",
+      "file": "src/cli.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 30.33,
+        "cyclomatic_complexity": 8,
+        "class_coupling": 3,
+        "depth_of_inheritance": 1,
+        "source_lines": 105,
+        "executable_lines": 40,
+        "halstead_volume": 3157.21,
+        "comment_lines": 31
+      },
+      "children": [
+        {
+          "kind": "function",
+          "name": "build_parser",
+          "qualname": "build_parser",
+          "file": "src/cli.py",
+          "line": 36,
+          "signature": "argparse.ArgumentParser build_parser()",
+          "metrics": {
+            "maintainability_index": 48.37,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 26,
+            "executable_lines": 13,
+            "halstead_volume": 884.9,
+            "comment_lines": 0
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "run_demo_command",
+          "qualname": "run_demo_command",
+          "file": "src/cli.py",
+          "line": 67,
+          "signature": "int run_demo_command(args: argparse.Namespace)",
+          "metrics": {
+            "maintainability_index": 80.28,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 2,
+            "executable_lines": 1,
+            "halstead_volume": 72.34,
+            "comment_lines": 0
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "run_report_command",
+          "qualname": "run_report_command",
+          "file": "src/cli.py",
+          "line": 74,
+          "signature": "int run_report_command(args: argparse.Namespace)",
+          "metrics": {
+            "maintainability_index": 65.33,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 3,
+            "depth_of_inheritance": 1,
+            "source_lines": 6,
+            "executable_lines": 4,
+            "halstead_volume": 322.02,
+            "comment_lines": 0
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "run_metrics_command",
+          "qualname": "run_metrics_command",
+          "file": "src/cli.py",
+          "line": 85,
+          "signature": "int run_metrics_command(args: argparse.Namespace)",
+          "metrics": {
+            "maintainability_index": 67.05,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 5,
+            "executable_lines": 3,
+            "halstead_volume": 323.14,
+            "comment_lines": 0
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "main",
+          "qualname": "main",
+          "file": "src/cli.py",
+          "line": 95,
+          "signature": "int main(argv: Optional[Sequence[str]])",
+          "metrics": {
+            "maintainability_index": 62.53,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 7,
+            "executable_lines": 6,
+            "halstead_volume": 457.69,
+            "comment_lines": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "demo",
+      "qualname": "src.demo",
+      "file": "src/demo.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 28.86,
+        "cyclomatic_complexity": 11,
+        "class_coupling": 8,
+        "depth_of_inheritance": 1,
+        "source_lines": 111,
+        "executable_lines": 50,
+        "halstead_volume": 3778.52,
+        "comment_lines": 22
+      },
+      "children": [
+        {
+          "kind": "function",
+          "name": "build_fixtures",
+          "qualname": "build_fixtures",
+          "file": "src/demo.py",
+          "line": 26,
+          "signature": "build_fixtures(service: RentalService)",
+          "metrics": {
+            "maintainability_index": 47.79,
+            "cyclomatic_complexity": 2,
+            "class_coupling": 8,
+            "depth_of_inheritance": 1,
+            "source_lines": 25,
+            "executable_lines": 12,
+            "halstead_volume": 1157.5,
+            "comment_lines": 0
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "run_demo",
+          "qualname": "run_demo",
+          "file": "src/demo.py",
+          "line": 56,
+          "signature": "int run_demo(state_path: Optional[str])",
+          "metrics": {
+            "maintainability_index": 43.1,
+            "cyclomatic_complexity": 5,
+            "class_coupling": 3,
+            "depth_of_inheritance": 1,
+            "source_lines": 37,
+            "executable_lines": 27,
+            "halstead_volume": 1397.48,
+            "comment_lines": 0
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "_try_overlap_booking",
+          "qualname": "_try_overlap_booking",
+          "file": "src/demo.py",
+          "line": 100,
+          "signature": "str _try_overlap_booking(service: RentalService, user, unit: EquipmentUnit)",
+          "metrics": {
+            "maintainability_index": 65.6,
+            "cyclomatic_complexity": 2,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 6,
+            "executable_lines": 4,
+            "halstead_volume": 281.76,
+            "comment_lines": 0
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "main",
+          "qualname": "main",
+          "file": "src/demo.py",
+          "line": 110,
+          "signature": "int main()",
+          "metrics": {
+            "maintainability_index": 82.5,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 0,
+            "depth_of_inheritance": 1,
+            "source_lines": 2,
+            "executable_lines": 1,
+            "halstead_volume": 34.87,
+            "comment_lines": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "description",
+      "qualname": "src.description",
+      "file": "src/description.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 57.45,
+        "cyclomatic_complexity": 1,
+        "class_coupling": 0,
+        "depth_of_inheritance": 1,
+        "source_lines": 88,
+        "executable_lines": 0,
+        "halstead_volume": 0.0,
+        "comment_lines": 88
+      },
+      "children": []
+    },
+    {
+      "kind": "module",
+      "name": "__init__",
+      "qualname": "src.domain.__init__",
+      "file": "src/domain/__init__.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 41.44,
+        "cyclomatic_complexity": 1,
+        "class_coupling": 0,
+        "depth_of_inheritance": 1,
+        "source_lines": 58,
+        "executable_lines": 9,
+        "halstead_volume": 708.55,
+        "comment_lines": 21
+      },
+      "children": []
+    },
+    {
+      "kind": "module",
+      "name": "enums",
+      "qualname": "src.domain.enums",
+      "file": "src/domain/enums.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 39.96,
+        "cyclomatic_complexity": 6,
+        "class_coupling": 1,
+        "depth_of_inheritance": 2,
+        "source_lines": 70,
+        "executable_lines": 20,
+        "halstead_volume": 513.59,
+        "comment_lines": 34
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "UserRole",
+          "qualname": "UserRole",
+          "file": "src/domain/enums.py",
+          "line": 16,
+          "signature": "UserRole",
+          "metrics": {
+            "maintainability_index": 66.12,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 2,
+            "source_lines": 9,
+            "executable_lines": 4,
+            "halstead_volume": 70.32,
+            "comment_lines": 4
+          },
+          "children": []
+        },
+        {
+          "kind": "class",
+          "name": "RequestStatus",
+          "qualname": "RequestStatus",
+          "file": "src/domain/enums.py",
+          "line": 28,
+          "signature": "RequestStatus",
+          "metrics": {
+            "maintainability_index": 63.61,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 2,
+            "source_lines": 11,
+            "executable_lines": 5,
+            "halstead_volume": 85.84,
+            "comment_lines": 5
+          },
+          "children": []
+        },
+        {
+          "kind": "class",
+          "name": "UnitStatus",
+          "qualname": "UnitStatus",
+          "file": "src/domain/enums.py",
+          "line": 42,
+          "signature": "UnitStatus",
+          "metrics": {
+            "maintainability_index": 66.12,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 2,
+            "source_lines": 9,
+            "executable_lines": 4,
+            "halstead_volume": 70.32,
+            "comment_lines": 4
+          },
+          "children": []
+        },
+        {
+          "kind": "class",
+          "name": "ReturnCondition",
+          "qualname": "ReturnCondition",
+          "file": "src/domain/enums.py",
+          "line": 54,
+          "signature": "ReturnCondition",
+          "metrics": {
+            "maintainability_index": 69.22,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 2,
+            "source_lines": 7,
+            "executable_lines": 3,
+            "halstead_volume": 55.51,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "class",
+          "name": "FineReason",
+          "qualname": "FineReason",
+          "file": "src/domain/enums.py",
+          "line": 64,
+          "signature": "FineReason",
+          "metrics": {
+            "maintainability_index": 69.22,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 2,
+            "source_lines": 7,
+            "executable_lines": 3,
+            "halstead_volume": 55.51,
+            "comment_lines": 3
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "equipment",
+      "qualname": "src.domain.equipment",
+      "file": "src/domain/equipment.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 23.74,
+        "cyclomatic_complexity": 28,
+        "class_coupling": 2,
+        "depth_of_inheritance": 1,
+        "source_lines": 166,
+        "executable_lines": 37,
+        "halstead_volume": 2733.27,
+        "comment_lines": 61
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "Category",
+          "qualname": "Category",
+          "file": "src/domain/equipment.py",
+          "line": 24,
+          "signature": "Category",
+          "metrics": {
+            "maintainability_index": 51.15,
+            "cyclomatic_complexity": 5,
+            "class_coupling": 0,
+            "depth_of_inheritance": 1,
+            "source_lines": 24,
+            "executable_lines": 6,
+            "halstead_volume": 380.39,
+            "comment_lines": 8
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Category.__init__",
+              "file": "src/domain/equipment.py",
+              "line": 29,
+              "signature": "None __init__(self, id: int, name: str, damage_coefficient: float)",
+              "metrics": {
+                "maintainability_index": 71.25,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 4,
+                "executable_lines": 3,
+                "halstead_volume": 162.52,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "name",
+              "qualname": "Category.name",
+              "file": "src/domain/equipment.py",
+              "line": 36,
+              "signature": "str name(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "damage_coefficient",
+              "qualname": "Category.damage_coefficient",
+              "file": "src/domain/equipment.py",
+              "line": 41,
+              "signature": "float damage_coefficient(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_name",
+              "qualname": "Category.get_name",
+              "file": "src/domain/equipment.py",
+              "line": 46,
+              "signature": "str get_name(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "EquipmentModel",
+          "qualname": "EquipmentModel",
+          "file": "src/domain/equipment.py",
+          "line": 51,
+          "signature": "EquipmentModel",
+          "metrics": {
+            "maintainability_index": 38.5,
+            "cyclomatic_complexity": 12,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 60,
+            "executable_lines": 16,
+            "halstead_volume": 1031.83,
+            "comment_lines": 18
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "EquipmentModel.__init__",
+              "file": "src/domain/equipment.py",
+              "line": 60,
+              "signature": "None __init__(self, id: int, name: str, category: Category, characteristics: str, daily_rate: float, replacement_cost: float)",
+              "metrics": {
+                "maintainability_index": 58.61,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 11,
+                "executable_lines": 8,
+                "halstead_volume": 406.34,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "id",
+              "qualname": "EquipmentModel.id",
+              "file": "src/domain/equipment.py",
+              "line": 74,
+              "signature": "int id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "name",
+              "qualname": "EquipmentModel.name",
+              "file": "src/domain/equipment.py",
+              "line": 79,
+              "signature": "str name(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "category",
+              "qualname": "EquipmentModel.category",
+              "file": "src/domain/equipment.py",
+              "line": 84,
+              "signature": "Category category(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "characteristics",
+              "qualname": "EquipmentModel.characteristics",
+              "file": "src/domain/equipment.py",
+              "line": 89,
+              "signature": "str characteristics(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "daily_rate",
+              "qualname": "EquipmentModel.daily_rate",
+              "file": "src/domain/equipment.py",
+              "line": 94,
+              "signature": "float daily_rate(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "replacement_cost",
+              "qualname": "EquipmentModel.replacement_cost",
+              "file": "src/domain/equipment.py",
+              "line": 99,
+              "signature": "float replacement_cost(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_daily_rate",
+              "qualname": "EquipmentModel.get_daily_rate",
+              "file": "src/domain/equipment.py",
+              "line": 104,
+              "signature": "float get_daily_rate(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_name",
+              "qualname": "EquipmentModel.get_name",
+              "file": "src/domain/equipment.py",
+              "line": 109,
+              "signature": "str get_name(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "EquipmentUnit",
+          "qualname": "EquipmentUnit",
+          "file": "src/domain/equipment.py",
+          "line": 114,
+          "signature": "EquipmentUnit",
+          "metrics": {
+            "maintainability_index": 40.52,
+            "cyclomatic_complexity": 10,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 53,
+            "executable_lines": 12,
+            "halstead_volume": 851.46,
+            "comment_lines": 17
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "EquipmentUnit.__init__",
+              "file": "src/domain/equipment.py",
+              "line": 120,
+              "signature": "None __init__(self, id: int, inventory_number: str, model: EquipmentModel, status: UnitStatus)",
+              "metrics": {
+                "maintainability_index": 66.49,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 4,
+                "halstead_volume": 220.08,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "id",
+              "qualname": "EquipmentUnit.id",
+              "file": "src/domain/equipment.py",
+              "line": 129,
+              "signature": "int id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "model",
+              "qualname": "EquipmentUnit.model",
+              "file": "src/domain/equipment.py",
+              "line": 134,
+              "signature": "EquipmentModel model(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "inventory_number",
+              "qualname": "EquipmentUnit.inventory_number",
+              "file": "src/domain/equipment.py",
+              "line": 139,
+              "signature": "str inventory_number(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "status",
+              "qualname": "EquipmentUnit.status",
+              "file": "src/domain/equipment.py",
+              "line": 144,
+              "signature": "UnitStatus status(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "set_status",
+              "qualname": "EquipmentUnit.set_status",
+              "file": "src/domain/equipment.py",
+              "line": 149,
+              "signature": "None set_status(self, status: UnitStatus)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "is_available",
+              "qualname": "EquipmentUnit.is_available",
+              "file": "src/domain/equipment.py",
+              "line": 155,
+              "signature": "bool is_available(self)",
+              "metrics": {
+                "maintainability_index": 80.8,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 60.92,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_inventory_number",
+              "qualname": "EquipmentUnit.get_inventory_number",
+              "file": "src/domain/equipment.py",
+              "line": 160,
+              "signature": "str get_inventory_number(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_model",
+              "qualname": "EquipmentUnit.get_model",
+              "file": "src/domain/equipment.py",
+              "line": 165,
+              "signature": "EquipmentModel get_model(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "errors",
+      "qualname": "src.domain.errors",
+      "file": "src/domain/errors.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 51.11,
+        "cyclomatic_complexity": 6,
+        "class_coupling": 1,
+        "depth_of_inheritance": 3,
+        "source_lines": 33,
+        "executable_lines": 0,
+        "halstead_volume": 136.74,
+        "comment_lines": 13
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "DomainError",
+          "qualname": "DomainError",
+          "file": "src/domain/errors.py",
+          "line": 12,
+          "signature": "DomainError",
+          "metrics": {
+            "maintainability_index": 84.24,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 0,
+            "depth_of_inheritance": 2,
+            "source_lines": 2,
+            "executable_lines": 0,
+            "halstead_volume": 19.65,
+            "comment_lines": 0
+          },
+          "children": []
+        },
+        {
+          "kind": "class",
+          "name": "ValidationError",
+          "qualname": "ValidationError",
+          "file": "src/domain/errors.py",
+          "line": 17,
+          "signature": "ValidationError",
+          "metrics": {
+            "maintainability_index": 84.24,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 3,
+            "source_lines": 2,
+            "executable_lines": 0,
+            "halstead_volume": 19.65,
+            "comment_lines": 0
+          },
+          "children": []
+        },
+        {
+          "kind": "class",
+          "name": "PermissionDenied",
+          "qualname": "PermissionDenied",
+          "file": "src/domain/errors.py",
+          "line": 22,
+          "signature": "PermissionDenied",
+          "metrics": {
+            "maintainability_index": 84.24,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 3,
+            "source_lines": 2,
+            "executable_lines": 0,
+            "halstead_volume": 19.65,
+            "comment_lines": 0
+          },
+          "children": []
+        },
+        {
+          "kind": "class",
+          "name": "InvalidTransition",
+          "qualname": "InvalidTransition",
+          "file": "src/domain/errors.py",
+          "line": 27,
+          "signature": "InvalidTransition",
+          "metrics": {
+            "maintainability_index": 84.24,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 3,
+            "source_lines": 2,
+            "executable_lines": 0,
+            "halstead_volume": 19.65,
+            "comment_lines": 0
+          },
+          "children": []
+        },
+        {
+          "kind": "class",
+          "name": "NotFoundError",
+          "qualname": "NotFoundError",
+          "file": "src/domain/errors.py",
+          "line": 32,
+          "signature": "NotFoundError",
+          "metrics": {
+            "maintainability_index": 84.24,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 3,
+            "source_lines": 2,
+            "executable_lines": 0,
+            "halstead_volume": 19.65,
+            "comment_lines": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "fine",
+      "qualname": "src.domain.fine",
+      "file": "src/domain/fine.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 38.88,
+        "cyclomatic_complexity": 10,
+        "class_coupling": 2,
+        "depth_of_inheritance": 1,
+        "source_lines": 61,
+        "executable_lines": 16,
+        "halstead_volume": 944.48,
+        "comment_lines": 19
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "Fine",
+          "qualname": "Fine",
+          "file": "src/domain/fine.py",
+          "line": 15,
+          "signature": "Fine",
+          "metrics": {
+            "maintainability_index": 41.94,
+            "cyclomatic_complexity": 9,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 47,
+            "executable_lines": 12,
+            "halstead_volume": 813.43,
+            "comment_lines": 13
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Fine.__init__",
+              "file": "src/domain/fine.py",
+              "line": 21,
+              "signature": "None __init__(self, id: int, reason: FineReason, amount: float, issue: Optional[Issue])",
+              "metrics": {
+                "maintainability_index": 64.53,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 7,
+                "executable_lines": 5,
+                "halstead_volume": 259.6,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "id",
+              "qualname": "Fine.id",
+              "file": "src/domain/fine.py",
+              "line": 31,
+              "signature": "int id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "reason",
+              "qualname": "Fine.reason",
+              "file": "src/domain/fine.py",
+              "line": 36,
+              "signature": "FineReason reason(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "amount",
+              "qualname": "Fine.amount",
+              "file": "src/domain/fine.py",
+              "line": 41,
+              "signature": "float amount(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "issue",
+              "qualname": "Fine.issue",
+              "file": "src/domain/fine.py",
+              "line": 46,
+              "signature": "Optional[Issue] issue(self)",
+              "metrics": {
+                "maintainability_index": 81.0,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 57.11,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "is_paid",
+              "qualname": "Fine.is_paid",
+              "file": "src/domain/fine.py",
+              "line": 51,
+              "signature": "bool is_paid(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "pay",
+              "qualname": "Fine.pay",
+              "file": "src/domain/fine.py",
+              "line": 55,
+              "signature": "None pay(self)",
+              "metrics": {
+                "maintainability_index": 81.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 46.6,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_amount",
+              "qualname": "Fine.get_amount",
+              "file": "src/domain/fine.py",
+              "line": 60,
+              "signature": "float get_amount(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "issue",
+      "qualname": "src.domain.issue",
+      "file": "src/domain/issue.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 33.59,
+        "cyclomatic_complexity": 13,
+        "class_coupling": 3,
+        "depth_of_inheritance": 1,
+        "source_lines": 86,
+        "executable_lines": 25,
+        "halstead_volume": 1613.16,
+        "comment_lines": 29
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "Issue",
+          "qualname": "Issue",
+          "file": "src/domain/issue.py",
+          "line": 21,
+          "signature": "Issue",
+          "metrics": {
+            "maintainability_index": 36.66,
+            "cyclomatic_complexity": 12,
+            "class_coupling": 3,
+            "depth_of_inheritance": 1,
+            "source_lines": 66,
+            "executable_lines": 19,
+            "halstead_volume": 1403.34,
+            "comment_lines": 19
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Issue.__init__",
+              "file": "src/domain/issue.py",
+              "line": 27,
+              "signature": "None __init__(self, id: int, request: Request, issue_date: date, cost: float)",
+              "metrics": {
+                "maintainability_index": 62.59,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 8,
+                "executable_lines": 6,
+                "halstead_volume": 323.85,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "id",
+              "qualname": "Issue.id",
+              "file": "src/domain/issue.py",
+              "line": 38,
+              "signature": "int id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "request",
+              "qualname": "Issue.request",
+              "file": "src/domain/issue.py",
+              "line": 43,
+              "signature": "Request request(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "issue_date",
+              "qualname": "Issue.issue_date",
+              "file": "src/domain/issue.py",
+              "line": 48,
+              "signature": "date issue_date(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "cost",
+              "qualname": "Issue.cost",
+              "file": "src/domain/issue.py",
+              "line": 53,
+              "signature": "float cost(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "return_date",
+              "qualname": "Issue.return_date",
+              "file": "src/domain/issue.py",
+              "line": 58,
+              "signature": "Optional[date] return_date(self)",
+              "metrics": {
+                "maintainability_index": 81.0,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 57.11,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "condition",
+              "qualname": "Issue.condition",
+              "file": "src/domain/issue.py",
+              "line": 63,
+              "signature": "Optional[ReturnCondition] condition(self)",
+              "metrics": {
+                "maintainability_index": 81.0,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 57.11,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "is_open",
+              "qualname": "Issue.is_open",
+              "file": "src/domain/issue.py",
+              "line": 68,
+              "signature": "bool is_open(self)",
+              "metrics": {
+                "maintainability_index": 81.29,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 51.81,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "close",
+              "qualname": "Issue.close",
+              "file": "src/domain/issue.py",
+              "line": 75,
+              "signature": "None close(self, return_date: date, condition: ReturnCondition)",
+              "metrics": {
+                "maintainability_index": 68.83,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 4,
+                "halstead_volume": 171.9,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "overdue_days",
+              "qualname": "Issue.overdue_days",
+              "file": "src/domain/issue.py",
+              "line": 84,
+              "signature": "int overdue_days(self, return_date: date)",
+              "metrics": {
+                "maintainability_index": 74.42,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 2,
+                "halstead_volume": 140.55,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "notification",
+      "qualname": "src.domain.notification",
+      "file": "src/domain/notification.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 41.25,
+        "cyclomatic_complexity": 8,
+        "class_coupling": 0,
+        "depth_of_inheritance": 1,
+        "source_lines": 54,
+        "executable_lines": 12,
+        "halstead_volume": 691.89,
+        "comment_lines": 21
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "Notification",
+          "qualname": "Notification",
+          "file": "src/domain/notification.py",
+          "line": 16,
+          "signature": "Notification",
+          "metrics": {
+            "maintainability_index": 44.79,
+            "cyclomatic_complexity": 7,
+            "class_coupling": 0,
+            "depth_of_inheritance": 1,
+            "source_lines": 39,
+            "executable_lines": 10,
+            "halstead_volume": 621.82,
+            "comment_lines": 11
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Notification.__init__",
+              "file": "src/domain/notification.py",
+              "line": 23,
+              "signature": "None __init__(self, id: int, user_id: int, message: str, date: date, kind: str)",
+              "metrics": {
+                "maintainability_index": 64.61,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 7,
+                "executable_lines": 5,
+                "halstead_volume": 252.17,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "id",
+              "qualname": "Notification.id",
+              "file": "src/domain/notification.py",
+              "line": 33,
+              "signature": "int id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "user_id",
+              "qualname": "Notification.user_id",
+              "file": "src/domain/notification.py",
+              "line": 38,
+              "signature": "int user_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "message",
+              "qualname": "Notification.message",
+              "file": "src/domain/notification.py",
+              "line": 43,
+              "signature": "str message(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "date",
+              "qualname": "Notification.date",
+              "file": "src/domain/notification.py",
+              "line": 48,
+              "signature": "date date(self)",
+              "metrics": {
+                "maintainability_index": 82.09,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 39.86,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "kind",
+              "qualname": "Notification.kind",
+              "file": "src/domain/notification.py",
+              "line": 53,
+              "signature": "str kind(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "people",
+      "qualname": "src.domain.people",
+      "file": "src/domain/people.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 20.99,
+        "cyclomatic_complexity": 31,
+        "class_coupling": 3,
+        "depth_of_inheritance": 2,
+        "source_lines": 195,
+        "executable_lines": 42,
+        "halstead_volume": 3586.85,
+        "comment_lines": 81
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "Person",
+          "qualname": "Person",
+          "file": "src/domain/people.py",
+          "line": 29,
+          "signature": "Person",
+          "metrics": {
+            "maintainability_index": 36.69,
+            "cyclomatic_complexity": 14,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 68,
+            "executable_lines": 18,
+            "halstead_volume": 1159.95,
+            "comment_lines": 21
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Person.__init__",
+              "file": "src/domain/people.py",
+              "line": 36,
+              "signature": "None __init__(self, id: int, fio: str, email: str, phone: str, role: Optional[UserRole])",
+              "metrics": {
+                "maintainability_index": 64.34,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 7,
+                "executable_lines": 5,
+                "halstead_volume": 275.78,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "id",
+              "qualname": "Person.id",
+              "file": "src/domain/people.py",
+              "line": 46,
+              "signature": "int id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "fio",
+              "qualname": "Person.fio",
+              "file": "src/domain/people.py",
+              "line": 51,
+              "signature": "str fio(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "email",
+              "qualname": "Person.email",
+              "file": "src/domain/people.py",
+              "line": 56,
+              "signature": "str email(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "phone",
+              "qualname": "Person.phone",
+              "file": "src/domain/people.py",
+              "line": 61,
+              "signature": "str phone(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "role",
+              "qualname": "Person.role",
+              "file": "src/domain/people.py",
+              "line": 66,
+              "signature": "Optional[UserRole] role(self)",
+              "metrics": {
+                "maintainability_index": 81.0,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 57.11,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "can_manage",
+              "qualname": "Person.can_manage",
+              "file": "src/domain/people.py",
+              "line": 71,
+              "signature": "bool can_manage(self)",
+              "metrics": {
+                "maintainability_index": 82.65,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 33.22,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_fio",
+              "qualname": "Person.get_fio",
+              "file": "src/domain/people.py",
+              "line": 76,
+              "signature": "str get_fio(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_email",
+              "qualname": "Person.get_email",
+              "file": "src/domain/people.py",
+              "line": 81,
+              "signature": "str get_email(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "set_email",
+              "qualname": "Person.set_email",
+              "file": "src/domain/people.py",
+              "line": 87,
+              "signature": "bool set_email(self, email: str)",
+              "metrics": {
+                "maintainability_index": 69.46,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 4,
+                "halstead_volume": 133.78,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "__str__",
+              "qualname": "Person.__str__",
+              "file": "src/domain/people.py",
+              "line": 95,
+              "signature": "str __str__(self)",
+              "metrics": {
+                "maintainability_index": 82.65,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 33.22,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Student",
+          "qualname": "Student",
+          "file": "src/domain/people.py",
+          "line": 100,
+          "signature": "Student",
+          "metrics": {
+            "maintainability_index": 45.81,
+            "cyclomatic_complexity": 6,
+            "class_coupling": 2,
+            "depth_of_inheritance": 2,
+            "source_lines": 35,
+            "executable_lines": 8,
+            "halstead_volume": 650.73,
+            "comment_lines": 13
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Student.__init__",
+              "file": "src/domain/people.py",
+              "line": 109,
+              "signature": "None __init__(self, id: int, fio: str, email: str, phone: str, student_id: str, group: str, faculty: str)",
+              "metrics": {
+                "maintainability_index": 65.31,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 4,
+                "halstead_volume": 324.33,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "group",
+              "qualname": "Student.group",
+              "file": "src/domain/people.py",
+              "line": 118,
+              "signature": "str group(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "student_id",
+              "qualname": "Student.student_id",
+              "file": "src/domain/people.py",
+              "line": 123,
+              "signature": "str student_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "faculty",
+              "qualname": "Student.faculty",
+              "file": "src/domain/people.py",
+              "line": 128,
+              "signature": "str faculty(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_group",
+              "qualname": "Student.get_group",
+              "file": "src/domain/people.py",
+              "line": 133,
+              "signature": "str get_group(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Teacher",
+          "qualname": "Teacher",
+          "file": "src/domain/people.py",
+          "line": 138,
+          "signature": "Teacher",
+          "metrics": {
+            "maintainability_index": 48.71,
+            "cyclomatic_complexity": 5,
+            "class_coupling": 2,
+            "depth_of_inheritance": 2,
+            "source_lines": 28,
+            "executable_lines": 6,
+            "halstead_volume": 525.14,
+            "comment_lines": 11
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Teacher.__init__",
+              "file": "src/domain/people.py",
+              "line": 146,
+              "signature": "None __init__(self, id: int, fio: str, email: str, phone: str, department: str, position: str)",
+              "metrics": {
+                "maintainability_index": 67.54,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 3,
+                "halstead_volume": 275.1,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "department",
+              "qualname": "Teacher.department",
+              "file": "src/domain/people.py",
+              "line": 154,
+              "signature": "str department(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "position",
+              "qualname": "Teacher.position",
+              "file": "src/domain/people.py",
+              "line": 159,
+              "signature": "str position(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_department",
+              "qualname": "Teacher.get_department",
+              "file": "src/domain/people.py",
+              "line": 164,
+              "signature": "str get_department(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "Employee",
+          "qualname": "Employee",
+          "file": "src/domain/people.py",
+          "line": 171,
+          "signature": "Employee",
+          "metrics": {
+            "maintainability_index": 49.57,
+            "cyclomatic_complexity": 5,
+            "class_coupling": 3,
+            "depth_of_inheritance": 2,
+            "source_lines": 25,
+            "executable_lines": 6,
+            "halstead_volume": 564.12,
+            "comment_lines": 11
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Employee.__init__",
+              "file": "src/domain/people.py",
+              "line": 180,
+              "signature": "None __init__(self, id: int, fio: str, email: str, phone: str, employee_id: str, role: UserRole)",
+              "metrics": {
+                "maintainability_index": 64.75,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 4,
+                "halstead_volume": 372.92,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "can_manage",
+              "qualname": "Employee.can_manage",
+              "file": "src/domain/people.py",
+              "line": 189,
+              "signature": "bool can_manage(self)",
+              "metrics": {
+                "maintainability_index": 82.65,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 33.22,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_employee_id",
+              "qualname": "Employee.get_employee_id",
+              "file": "src/domain/people.py",
+              "line": 194,
+              "signature": "str get_employee_id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "request",
+      "qualname": "src.domain.request",
+      "file": "src/domain/request.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 29.53,
+        "cyclomatic_complexity": 17,
+        "class_coupling": 5,
+        "depth_of_inheritance": 1,
+        "source_lines": 109,
+        "executable_lines": 30,
+        "halstead_volume": 2452.91,
+        "comment_lines": 35
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "Request",
+          "qualname": "Request",
+          "file": "src/domain/request.py",
+          "line": 31,
+          "signature": "Request",
+          "metrics": {
+            "maintainability_index": 33.88,
+            "cyclomatic_complexity": 16,
+            "class_coupling": 5,
+            "depth_of_inheritance": 1,
+            "source_lines": 79,
+            "executable_lines": 22,
+            "halstead_volume": 1672.47,
+            "comment_lines": 24
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "Request.__init__",
+              "file": "src/domain/request.py",
+              "line": 40,
+              "signature": "None __init__(self, id: int, user: Person, units: Sequence[EquipmentUnit], start_date: date, end_date: date, status: RequestStatus)",
+              "metrics": {
+                "maintainability_index": 56.5,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 4,
+                "depth_of_inheritance": 1,
+                "source_lines": 13,
+                "executable_lines": 10,
+                "halstead_volume": 484.3,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "id",
+              "qualname": "Request.id",
+              "file": "src/domain/request.py",
+              "line": 56,
+              "signature": "int id(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "user",
+              "qualname": "Request.user",
+              "file": "src/domain/request.py",
+              "line": 61,
+              "signature": "Person user(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "units",
+              "qualname": "Request.units",
+              "file": "src/domain/request.py",
+              "line": 66,
+              "signature": "List[EquipmentUnit] units(self)",
+              "metrics": {
+                "maintainability_index": 80.37,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 70.32,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "start_date",
+              "qualname": "Request.start_date",
+              "file": "src/domain/request.py",
+              "line": 71,
+              "signature": "date start_date(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "end_date",
+              "qualname": "Request.end_date",
+              "file": "src/domain/request.py",
+              "line": 76,
+              "signature": "date end_date(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "status",
+              "qualname": "Request.status",
+              "file": "src/domain/request.py",
+              "line": 81,
+              "signature": "RequestStatus status(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "days",
+              "qualname": "Request.days",
+              "file": "src/domain/request.py",
+              "line": 86,
+              "signature": "int days(self)",
+              "metrics": {
+                "maintainability_index": 80.21,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 74.01,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "overlaps",
+              "qualname": "Request.overlaps",
+              "file": "src/domain/request.py",
+              "line": 93,
+              "signature": "bool overlaps(self, start_date: date, end_date: date)",
+              "metrics": {
+                "maintainability_index": 78.69,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 116.76,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "transition",
+              "qualname": "Request.transition",
+              "file": "src/domain/request.py",
+              "line": 99,
+              "signature": "None transition(self, target: RequestStatus)",
+              "metrics": {
+                "maintainability_index": 67.4,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 3,
+                "halstead_volume": 155.89,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "get_status",
+              "qualname": "Request.get_status",
+              "file": "src/domain/request.py",
+              "line": 108,
+              "signature": "str get_status(self)",
+              "metrics": {
+                "maintainability_index": 81.39,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 50.19,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "fines",
+      "qualname": "src.fines",
+      "file": "src/fines.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 25.55,
+        "cyclomatic_complexity": 24,
+        "class_coupling": 8,
+        "depth_of_inheritance": 2,
+        "source_lines": 140,
+        "executable_lines": 34,
+        "halstead_volume": 3056.13,
+        "comment_lines": 50
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "FineContext",
+          "qualname": "FineContext",
+          "file": "src/fines.py",
+          "line": 30,
+          "signature": "FineContext",
+          "metrics": {
+            "maintainability_index": 61.61,
+            "cyclomatic_complexity": 2,
+            "class_coupling": 3,
+            "depth_of_inheritance": 1,
+            "source_lines": 12,
+            "executable_lines": 4,
+            "halstead_volume": 121.01,
+            "comment_lines": 4
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "request",
+              "qualname": "FineContext.request",
+              "file": "src/fines.py",
+              "line": 40,
+              "signature": "Request request(self)",
+              "metrics": {
+                "maintainability_index": 81.5,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 48.43,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "FineRule",
+          "qualname": "FineRule",
+          "file": "src/fines.py",
+          "line": 45,
+          "signature": "FineRule",
+          "metrics": {
+            "maintainability_index": 62.14,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 2,
+            "depth_of_inheritance": 2,
+            "source_lines": 11,
+            "executable_lines": 2,
+            "halstead_volume": 127.44,
+            "comment_lines": 4
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "reason",
+              "qualname": "FineRule.reason",
+              "file": "src/fines.py",
+              "line": 48,
+              "signature": "FineReason reason(self)",
+              "metrics": {
+                "maintainability_index": 83.11,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 28.53,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "amount",
+              "qualname": "FineRule.amount",
+              "file": "src/fines.py",
+              "line": 54,
+              "signature": "float amount(self, context: FineContext)",
+              "metrics": {
+                "maintainability_index": 81.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 46.6,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "OverdueRule",
+          "qualname": "OverdueRule",
+          "file": "src/fines.py",
+          "line": 59,
+          "signature": "OverdueRule",
+          "metrics": {
+            "maintainability_index": 59.56,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 11,
+            "executable_lines": 3,
+            "halstead_volume": 297.5,
+            "comment_lines": 4
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "amount",
+              "qualname": "OverdueRule.amount",
+              "file": "src/fines.py",
+              "line": 66,
+              "signature": "float amount(self, context: FineContext)",
+              "metrics": {
+                "maintainability_index": 69.86,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 4,
+                "executable_lines": 2,
+                "halstead_volume": 245.34,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "DamageRule",
+          "qualname": "DamageRule",
+          "file": "src/fines.py",
+          "line": 73,
+          "signature": "DamageRule",
+          "metrics": {
+            "maintainability_index": 58.31,
+            "cyclomatic_complexity": 4,
+            "class_coupling": 3,
+            "depth_of_inheritance": 1,
+            "source_lines": 12,
+            "executable_lines": 4,
+            "halstead_volume": 327.69,
+            "comment_lines": 4
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "amount",
+              "qualname": "DamageRule.amount",
+              "file": "src/fines.py",
+              "line": 80,
+              "signature": "float amount(self, context: FineContext)",
+              "metrics": {
+                "maintainability_index": 67.3,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 3,
+                "halstead_volume": 272.4,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "LossRule",
+          "qualname": "LossRule",
+          "file": "src/fines.py",
+          "line": 88,
+          "signature": "LossRule",
+          "metrics": {
+            "maintainability_index": 59.62,
+            "cyclomatic_complexity": 4,
+            "class_coupling": 3,
+            "depth_of_inheritance": 1,
+            "source_lines": 11,
+            "executable_lines": 4,
+            "halstead_volume": 279.18,
+            "comment_lines": 4
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "amount",
+              "qualname": "LossRule.amount",
+              "file": "src/fines.py",
+              "line": 95,
+              "signature": "float amount(self, context: FineContext)",
+              "metrics": {
+                "maintainability_index": 69.98,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 4,
+                "executable_lines": 3,
+                "halstead_volume": 225.72,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "FineItem",
+          "qualname": "FineItem",
+          "file": "src/fines.py",
+          "line": 103,
+          "signature": "FineItem",
+          "metrics": {
+            "maintainability_index": 74.8,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 5,
+            "executable_lines": 2,
+            "halstead_volume": 25.27,
+            "comment_lines": 2
+          },
+          "children": []
+        },
+        {
+          "kind": "class",
+          "name": "FineCalculator",
+          "qualname": "FineCalculator",
+          "file": "src/fines.py",
+          "line": 111,
+          "signature": "FineCalculator",
+          "metrics": {
+            "maintainability_index": 49.79,
+            "cyclomatic_complexity": 6,
+            "class_coupling": 8,
+            "depth_of_inheritance": 1,
+            "source_lines": 22,
+            "executable_lines": 8,
+            "halstead_volume": 746.76,
+            "comment_lines": 7
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "FineCalculator.__init__",
+              "file": "src/fines.py",
+              "line": 114,
+              "signature": "None __init__(self, rules: Optional[Sequence[FineRule]])",
+              "metrics": {
+                "maintainability_index": 70.12,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 4,
+                "depth_of_inheritance": 1,
+                "source_lines": 4,
+                "executable_lines": 1,
+                "halstead_volume": 225.62,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "calculate",
+              "qualname": "FineCalculator.calculate",
+              "file": "src/fines.py",
+              "line": 124,
+              "signature": "List[FineItem] calculate(self, issue: Issue, condition: ReturnCondition, return_date: date)",
+              "metrics": {
+                "maintainability_index": 60.43,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 4,
+                "depth_of_inheritance": 1,
+                "source_lines": 9,
+                "executable_lines": 7,
+                "halstead_volume": 417.17,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "issues",
+      "qualname": "src.issues",
+      "file": "src/issues.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 27.92,
+        "cyclomatic_complexity": 15,
+        "class_coupling": 15,
+        "depth_of_inheritance": 1,
+        "source_lines": 121,
+        "executable_lines": 45,
+        "halstead_volume": 3296.58,
+        "comment_lines": 39
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "IssueDesk",
+          "qualname": "IssueDesk",
+          "file": "src/issues.py",
+          "line": 28,
+          "signature": "IssueDesk",
+          "metrics": {
+            "maintainability_index": 30.96,
+            "cyclomatic_complexity": 14,
+            "class_coupling": 15,
+            "depth_of_inheritance": 1,
+            "source_lines": 94,
+            "executable_lines": 36,
+            "halstead_volume": 2778.18,
+            "comment_lines": 28
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "IssueDesk.__init__",
+              "file": "src/issues.py",
+              "line": 34,
+              "signature": "None __init__(self, registry: RentalRegistry, pricing: PriceCalculator, fines: FineCalculator, journal: NotificationJournal)",
+              "metrics": {
+                "maintainability_index": 66.79,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 4,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 4,
+                "halstead_volume": 199.04,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "issue",
+              "qualname": "IssueDesk.issue",
+              "file": "src/issues.py",
+              "line": 48,
+              "signature": "Issue issue(self, request: Request, employee: Person, issue_date: date)",
+              "metrics": {
+                "maintainability_index": 53.02,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 5,
+                "depth_of_inheritance": 1,
+                "source_lines": 17,
+                "executable_lines": 11,
+                "halstead_volume": 687.89,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "return_equipment",
+              "qualname": "IssueDesk.return_equipment",
+              "file": "src/issues.py",
+              "line": 73,
+              "signature": "List[FineItem] return_equipment(self, issue: Issue, employee: Person, return_date: date, condition: ReturnCondition)",
+              "metrics": {
+                "maintainability_index": 52.47,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 6,
+                "depth_of_inheritance": 1,
+                "source_lines": 18,
+                "executable_lines": 12,
+                "halstead_volume": 660.33,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "_ensure_approved",
+              "qualname": "IssueDesk._ensure_approved",
+              "file": "src/issues.py",
+              "line": 95,
+              "signature": "None _ensure_approved(self, request: Request)",
+              "metrics": {
+                "maintainability_index": 69.8,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 3,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 2,
+                "halstead_volume": 124.86,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "_ensure_units_free",
+              "qualname": "IssueDesk._ensure_units_free",
+              "file": "src/issues.py",
+              "line": 104,
+              "signature": "None _ensure_units_free(self, units: Sequence[EquipmentUnit])",
+              "metrics": {
+                "maintainability_index": 69.28,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 3,
+                "halstead_volume": 142.13,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "_register_fines",
+              "qualname": "IssueDesk._register_fines",
+              "file": "src/issues.py",
+              "line": 113,
+              "signature": "None _register_fines(self, issue: Issue, items: List[FineItem])",
+              "metrics": {
+                "maintainability_index": 60.98,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 3,
+                "depth_of_inheritance": 1,
+                "source_lines": 9,
+                "executable_lines": 4,
+                "halstead_volume": 364.18,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "main",
+      "qualname": "src.main",
+      "file": "src/main.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 47.74,
+        "cyclomatic_complexity": 4,
+        "class_coupling": 0,
+        "depth_of_inheritance": 1,
+        "source_lines": 34,
+        "executable_lines": 8,
+        "halstead_volume": 412.26,
+        "comment_lines": 19
+      },
+      "children": [
+        {
+          "kind": "function",
+          "name": "main",
+          "qualname": "main",
+          "file": "src/main.py",
+          "line": 28,
+          "signature": "int main(argv: Optional[Sequence[str]])",
+          "metrics": {
+            "maintainability_index": 72.77,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 0,
+            "depth_of_inheritance": 1,
+            "source_lines": 3,
+            "executable_lines": 2,
+            "halstead_volume": 220.92,
+            "comment_lines": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "notifications",
+      "qualname": "src.notifications",
+      "file": "src/notifications.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 36.63,
+        "cyclomatic_complexity": 14,
+        "class_coupling": 2,
+        "depth_of_inheritance": 1,
+        "source_lines": 63,
+        "executable_lines": 16,
+        "halstead_volume": 1500.46,
+        "comment_lines": 28
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "NotificationJournal",
+          "qualname": "NotificationJournal",
+          "file": "src/notifications.py",
+          "line": 21,
+          "signature": "NotificationJournal",
+          "metrics": {
+            "maintainability_index": 40.73,
+            "cyclomatic_complexity": 13,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 43,
+            "executable_lines": 12,
+            "halstead_volume": 1335.49,
+            "comment_lines": 16
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "NotificationJournal.__init__",
+              "file": "src/notifications.py",
+              "line": 23,
+              "signature": "None __init__(self)",
+              "metrics": {
+                "maintainability_index": 75.51,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 2,
+                "halstead_volume": 98.1,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "register",
+              "qualname": "NotificationJournal.register",
+              "file": "src/notifications.py",
+              "line": 33,
+              "signature": "Notification register(self, user: Person, message: str, kind: str, day: Optional[date])",
+              "metrics": {
+                "maintainability_index": 63.46,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 7,
+                "executable_lines": 4,
+                "halstead_volume": 353.11,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "for_user",
+              "qualname": "NotificationJournal.for_user",
+              "file": "src/notifications.py",
+              "line": 45,
+              "signature": "List[Notification] for_user(self, user_id: int, kind: Optional[str])",
+              "metrics": {
+                "maintainability_index": 72.07,
+                "cyclomatic_complexity": 5,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 1,
+                "halstead_volume": 255.16,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "all",
+              "qualname": "NotificationJournal.all",
+              "file": "src/notifications.py",
+              "line": 51,
+              "signature": "List[Notification] all(self)",
+              "metrics": {
+                "maintainability_index": 80.37,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 70.32,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "restore",
+              "qualname": "NotificationJournal.restore",
+              "file": "src/notifications.py",
+              "line": 56,
+              "signature": "None restore(self, items: List[Notification])",
+              "metrics": {
+                "maintainability_index": 73.04,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 2,
+                "halstead_volume": 211.52,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "clear",
+              "qualname": "NotificationJournal.clear",
+              "file": "src/notifications.py",
+              "line": 61,
+              "signature": "None clear(self)",
+              "metrics": {
+                "maintainability_index": 76.36,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 2,
+                "halstead_volume": 74.23,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "permissions",
+      "qualname": "src.permissions",
+      "file": "src/permissions.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 52.55,
+        "cyclomatic_complexity": 4,
+        "class_coupling": 2,
+        "depth_of_inheritance": 1,
+        "source_lines": 25,
+        "executable_lines": 6,
+        "halstead_volume": 221.14,
+        "comment_lines": 12
+      },
+      "children": [
+        {
+          "kind": "function",
+          "name": "require_staff",
+          "qualname": "require_staff",
+          "file": "src/permissions.py",
+          "line": 19,
+          "signature": "None require_staff(user: Person)",
+          "metrics": {
+            "maintainability_index": 65.8,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 7,
+            "executable_lines": 4,
+            "halstead_volume": 156.08,
+            "comment_lines": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "pricing",
+      "qualname": "src.pricing",
+      "file": "src/pricing.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 23.28,
+        "cyclomatic_complexity": 27,
+        "class_coupling": 8,
+        "depth_of_inheritance": 2,
+        "source_lines": 161,
+        "executable_lines": 44,
+        "halstead_volume": 3662.43,
+        "comment_lines": 61
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "PricingContext",
+          "qualname": "PricingContext",
+          "file": "src/pricing.py",
+          "line": 42,
+          "signature": "PricingContext",
+          "metrics": {
+            "maintainability_index": 69.42,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 7,
+            "executable_lines": 3,
+            "halstead_volume": 51.89,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "class",
+          "name": "DiscountRule",
+          "qualname": "DiscountRule",
+          "file": "src/pricing.py",
+          "line": 52,
+          "signature": "DiscountRule",
+          "metrics": {
+            "maintainability_index": 62.14,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 1,
+            "depth_of_inheritance": 2,
+            "source_lines": 11,
+            "executable_lines": 2,
+            "halstead_volume": 127.44,
+            "comment_lines": 4
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "name",
+              "qualname": "DiscountRule.name",
+              "file": "src/pricing.py",
+              "line": 55,
+              "signature": "str name(self)",
+              "metrics": {
+                "maintainability_index": 83.11,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 28.53,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "discount",
+              "qualname": "DiscountRule.discount",
+              "file": "src/pricing.py",
+              "line": 61,
+              "signature": "float discount(self, context: PricingContext)",
+              "metrics": {
+                "maintainability_index": 81.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 46.6,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "RoleDiscount",
+          "qualname": "RoleDiscount",
+          "file": "src/pricing.py",
+          "line": 66,
+          "signature": "RoleDiscount",
+          "metrics": {
+            "maintainability_index": 64.13,
+            "cyclomatic_complexity": 2,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 9,
+            "executable_lines": 2,
+            "halstead_volume": 129.32,
+            "comment_lines": 4
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "discount",
+              "qualname": "RoleDiscount.discount",
+              "file": "src/pricing.py",
+              "line": 73,
+              "signature": "float discount(self, context: PricingContext)",
+              "metrics": {
+                "maintainability_index": 79.48,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 94.01,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "LongRentalDiscount",
+          "qualname": "LongRentalDiscount",
+          "file": "src/pricing.py",
+          "line": 78,
+          "signature": "LongRentalDiscount",
+          "metrics": {
+            "maintainability_index": 60.28,
+            "cyclomatic_complexity": 4,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 12,
+            "executable_lines": 5,
+            "halstead_volume": 171.18,
+            "comment_lines": 4
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "discount",
+              "qualname": "LongRentalDiscount.discount",
+              "file": "src/pricing.py",
+              "line": 85,
+              "signature": "float discount(self, context: PricingContext)",
+              "metrics": {
+                "maintainability_index": 69.46,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 4,
+                "halstead_volume": 133.78,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "BulkDiscount",
+          "qualname": "BulkDiscount",
+          "file": "src/pricing.py",
+          "line": 93,
+          "signature": "BulkDiscount",
+          "metrics": {
+            "maintainability_index": 63.98,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 9,
+            "executable_lines": 2,
+            "halstead_volume": 130.03,
+            "comment_lines": 4
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "discount",
+              "qualname": "BulkDiscount.discount",
+              "file": "src/pricing.py",
+              "line": 100,
+              "signature": "float discount(self, context: PricingContext)",
+              "metrics": {
+                "maintainability_index": 79.31,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 95.08,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "PriceBreakdown",
+          "qualname": "PriceBreakdown",
+          "file": "src/pricing.py",
+          "line": 106,
+          "signature": "PriceBreakdown",
+          "metrics": {
+            "maintainability_index": 52.41,
+            "cyclomatic_complexity": 5,
+            "class_coupling": 0,
+            "depth_of_inheritance": 1,
+            "source_lines": 20,
+            "executable_lines": 8,
+            "halstead_volume": 443.97,
+            "comment_lines": 6
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "discount",
+              "qualname": "PriceBreakdown.discount",
+              "file": "src/pricing.py",
+              "line": 116,
+              "signature": "float discount(self)",
+              "metrics": {
+                "maintainability_index": 79.83,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 84.0,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "describe",
+              "qualname": "PriceBreakdown.describe",
+              "file": "src/pricing.py",
+              "line": 121,
+              "signature": "str describe(self)",
+              "metrics": {
+                "maintainability_index": 68.75,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 4,
+                "halstead_volume": 169.22,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "PriceCalculator",
+          "qualname": "PriceCalculator",
+          "file": "src/pricing.py",
+          "line": 129,
+          "signature": "PriceCalculator",
+          "metrics": {
+            "maintainability_index": 43.88,
+            "cyclomatic_complexity": 8,
+            "class_coupling": 8,
+            "depth_of_inheritance": 1,
+            "source_lines": 33,
+            "executable_lines": 13,
+            "halstead_volume": 1349.98,
+            "comment_lines": 11
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "PriceCalculator.__init__",
+              "file": "src/pricing.py",
+              "line": 132,
+              "signature": "None __init__(self, rules: Optional[Sequence[DiscountRule]])",
+              "metrics": {
+                "maintainability_index": 70.12,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 4,
+                "depth_of_inheritance": 1,
+                "source_lines": 4,
+                "executable_lines": 1,
+                "halstead_volume": 225.62,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "subtotal",
+              "qualname": "PriceCalculator.subtotal",
+              "file": "src/pricing.py",
+              "line": 141,
+              "signature": "float subtotal(self, units: Sequence[EquipmentUnit], days: int)",
+              "metrics": {
+                "maintainability_index": 77.28,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 185.44,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "calculate",
+              "qualname": "PriceCalculator.calculate",
+              "file": "src/pricing.py",
+              "line": 149,
+              "signature": "PriceBreakdown calculate(self, units: Sequence[EquipmentUnit], user: Person, days: int)",
+              "metrics": {
+                "maintainability_index": 55.21,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 4,
+                "depth_of_inheritance": 1,
+                "source_lines": 13,
+                "executable_lines": 11,
+                "halstead_volume": 739.35,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "registry",
+      "qualname": "src.registry",
+      "file": "src/registry.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 28.98,
+        "cyclomatic_complexity": 20,
+        "class_coupling": 6,
+        "depth_of_inheritance": 1,
+        "source_lines": 107,
+        "executable_lines": 27,
+        "halstead_volume": 2732.16,
+        "comment_lines": 38
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "RentalRegistry",
+          "qualname": "RentalRegistry",
+          "file": "src/registry.py",
+          "line": 19,
+          "signature": "RentalRegistry",
+          "metrics": {
+            "maintainability_index": 31.13,
+            "cyclomatic_complexity": 19,
+            "class_coupling": 6,
+            "depth_of_inheritance": 1,
+            "source_lines": 89,
+            "executable_lines": 23,
+            "halstead_volume": 2499.23,
+            "comment_lines": 28
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "RentalRegistry.__init__",
+              "file": "src/registry.py",
+              "line": 21,
+              "signature": "None __init__(self)",
+              "metrics": {
+                "maintainability_index": 68.1,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 4,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 4,
+                "halstead_volume": 228.4,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "units",
+              "qualname": "RentalRegistry.units",
+              "file": "src/registry.py",
+              "line": 29,
+              "signature": "List[EquipmentUnit] units(self)",
+              "metrics": {
+                "maintainability_index": 80.37,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 70.32,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "requests",
+              "qualname": "RentalRegistry.requests",
+              "file": "src/registry.py",
+              "line": 34,
+              "signature": "List[Request] requests(self)",
+              "metrics": {
+                "maintainability_index": 80.37,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 70.32,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "issues",
+              "qualname": "RentalRegistry.issues",
+              "file": "src/registry.py",
+              "line": 39,
+              "signature": "List[Issue] issues(self)",
+              "metrics": {
+                "maintainability_index": 80.37,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 70.32,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "fines",
+              "qualname": "RentalRegistry.fines",
+              "file": "src/registry.py",
+              "line": 44,
+              "signature": "List[Fine] fines(self)",
+              "metrics": {
+                "maintainability_index": 80.37,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 70.32,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "add_unit",
+              "qualname": "RentalRegistry.add_unit",
+              "file": "src/registry.py",
+              "line": 50,
+              "signature": "None add_unit(self, unit: EquipmentUnit)",
+              "metrics": {
+                "maintainability_index": 66.55,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 3,
+                "halstead_volume": 197.15,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "add_request",
+              "qualname": "RentalRegistry.add_request",
+              "file": "src/registry.py",
+              "line": 59,
+              "signature": "None add_request(self, request: Request)",
+              "metrics": {
+                "maintainability_index": 80.12,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 76.15,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "add_issue",
+              "qualname": "RentalRegistry.add_issue",
+              "file": "src/registry.py",
+              "line": 64,
+              "signature": "None add_issue(self, issue: Issue)",
+              "metrics": {
+                "maintainability_index": 80.12,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 76.15,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "add_fine",
+              "qualname": "RentalRegistry.add_fine",
+              "file": "src/registry.py",
+              "line": 69,
+              "signature": "None add_fine(self, fine: Fine)",
+              "metrics": {
+                "maintainability_index": 80.12,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 76.15,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "next_request_id",
+              "qualname": "RentalRegistry.next_request_id",
+              "file": "src/registry.py",
+              "line": 74,
+              "signature": "int next_request_id(self)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "next_issue_id",
+              "qualname": "RentalRegistry.next_issue_id",
+              "file": "src/registry.py",
+              "line": 79,
+              "signature": "int next_issue_id(self)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "next_fine_id",
+              "qualname": "RentalRegistry.next_fine_id",
+              "file": "src/registry.py",
+              "line": 84,
+              "signature": "int next_fine_id(self)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "contains_unit",
+              "qualname": "RentalRegistry.contains_unit",
+              "file": "src/registry.py",
+              "line": 90,
+              "signature": "bool contains_unit(self, unit: EquipmentUnit)",
+              "metrics": {
+                "maintainability_index": 78.98,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 106.2,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "load",
+              "qualname": "RentalRegistry.load",
+              "file": "src/registry.py",
+              "line": 95,
+              "signature": "None load(self, state: ServiceState)",
+              "metrics": {
+                "maintainability_index": 68.06,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 4,
+                "halstead_volume": 231.89,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "snapshot",
+              "qualname": "RentalRegistry.snapshot",
+              "file": "src/registry.py",
+              "line": 104,
+              "signature": "ServiceState snapshot(self, notifications: Sequence)",
+              "metrics": {
+                "maintainability_index": 70.5,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 4,
+                "executable_lines": 1,
+                "halstead_volume": 208.08,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "reports",
+      "qualname": "src.reports",
+      "file": "src/reports.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 26.6,
+        "cyclomatic_complexity": 23,
+        "class_coupling": 5,
+        "depth_of_inheritance": 1,
+        "source_lines": 122,
+        "executable_lines": 40,
+        "halstead_volume": 3478.29,
+        "comment_lines": 37
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "RentalStatistics",
+          "qualname": "RentalStatistics",
+          "file": "src/reports.py",
+          "line": 21,
+          "signature": "RentalStatistics",
+          "metrics": {
+            "maintainability_index": 55.51,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 0,
+            "depth_of_inheritance": 1,
+            "source_lines": 21,
+            "executable_lines": 10,
+            "halstead_volume": 164.23,
+            "comment_lines": 10
+          },
+          "children": []
+        },
+        {
+          "kind": "class",
+          "name": "RentalReport",
+          "qualname": "RentalReport",
+          "file": "src/reports.py",
+          "line": 45,
+          "signature": "RentalReport",
+          "metrics": {
+            "maintainability_index": 31.64,
+            "cyclomatic_complexity": 21,
+            "class_coupling": 5,
+            "depth_of_inheritance": 1,
+            "source_lines": 78,
+            "executable_lines": 26,
+            "halstead_volume": 2916.3,
+            "comment_lines": 15
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "RentalReport.__init__",
+              "file": "src/reports.py",
+              "line": 51,
+              "signature": "None __init__(self, units: Sequence[EquipmentUnit], requests: Sequence[Request], issues: Sequence[Issue], fines: Sequence[Fine])",
+              "metrics": {
+                "maintainability_index": 65.32,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 4,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 4,
+                "halstead_volume": 323.33,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "statistics",
+              "qualname": "RentalReport.statistics",
+              "file": "src/reports.py",
+              "line": 60,
+              "signature": "RentalStatistics statistics(self)",
+              "metrics": {
+                "maintainability_index": 51.75,
+                "cyclomatic_complexity": 9,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 16,
+                "executable_lines": 3,
+                "halstead_volume": 926.43,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "_category_counts",
+              "qualname": "RentalReport._category_counts",
+              "file": "src/reports.py",
+              "line": 79,
+              "signature": "Dict[str, int] _category_counts(self)",
+              "metrics": {
+                "maintainability_index": 65.62,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 5,
+                "halstead_volume": 279.69,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "active_issues",
+              "qualname": "RentalReport.active_issues",
+              "file": "src/reports.py",
+              "line": 88,
+              "signature": "List[Issue] active_issues(self)",
+              "metrics": {
+                "maintainability_index": 78.84,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 106.2,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "build",
+              "qualname": "RentalReport.build",
+              "file": "src/reports.py",
+              "line": 93,
+              "signature": "str build(self)",
+              "metrics": {
+                "maintainability_index": 55.48,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 16,
+                "executable_lines": 5,
+                "halstead_volume": 369.87,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "_active_lines",
+              "qualname": "RentalReport._active_lines",
+              "file": "src/reports.py",
+              "line": 112,
+              "signature": "List[str] _active_lines(self)",
+              "metrics": {
+                "maintainability_index": 60.3,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 0,
+                "depth_of_inheritance": 1,
+                "source_lines": 11,
+                "executable_lines": 8,
+                "halstead_volume": 232.99,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "repository",
+      "qualname": "src.repository",
+      "file": "src/repository.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 33.46,
+        "cyclomatic_complexity": 16,
+        "class_coupling": 3,
+        "depth_of_inheritance": 2,
+        "source_lines": 84,
+        "executable_lines": 18,
+        "halstead_volume": 1589.96,
+        "comment_lines": 35
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "RentalRepository",
+          "qualname": "RentalRepository",
+          "file": "src/repository.py",
+          "line": 23,
+          "signature": "RentalRepository",
+          "metrics": {
+            "maintainability_index": 63.43,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 1,
+            "depth_of_inheritance": 2,
+            "source_lines": 10,
+            "executable_lines": 2,
+            "halstead_volume": 112.0,
+            "comment_lines": 4
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "save",
+              "qualname": "RentalRepository.save",
+              "file": "src/repository.py",
+              "line": 26,
+              "signature": "None save(self, state: ServiceState)",
+              "metrics": {
+                "maintainability_index": 81.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 46.6,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "load",
+              "qualname": "RentalRepository.load",
+              "file": "src/repository.py",
+              "line": 31,
+              "signature": "ServiceState load(self)",
+              "metrics": {
+                "maintainability_index": 83.11,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 28.53,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "InMemoryRepository",
+          "qualname": "InMemoryRepository",
+          "file": "src/repository.py",
+          "line": 36,
+          "signature": "InMemoryRepository",
+          "metrics": {
+            "maintainability_index": 57.12,
+            "cyclomatic_complexity": 5,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 14,
+            "executable_lines": 3,
+            "halstead_volume": 286.73,
+            "comment_lines": 5
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "InMemoryRepository.__init__",
+              "file": "src/repository.py",
+              "line": 38,
+              "signature": "None __init__(self)",
+              "metrics": {
+                "maintainability_index": 80.37,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 70.32,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "save",
+              "qualname": "InMemoryRepository.save",
+              "file": "src/repository.py",
+              "line": 43,
+              "signature": "None save(self, state: ServiceState)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "load",
+              "qualname": "InMemoryRepository.load",
+              "file": "src/repository.py",
+              "line": 48,
+              "signature": "ServiceState load(self)",
+              "metrics": {
+                "maintainability_index": 79.41,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 92.0,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "class",
+          "name": "JsonRepository",
+          "qualname": "JsonRepository",
+          "file": "src/repository.py",
+          "line": 53,
+          "signature": "JsonRepository",
+          "metrics": {
+            "maintainability_index": 48.98,
+            "cyclomatic_complexity": 5,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 25,
+            "executable_lines": 7,
+            "halstead_volume": 683.71,
+            "comment_lines": 8
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "JsonRepository.__init__",
+              "file": "src/repository.py",
+              "line": 56,
+              "signature": "None __init__(self, path: str)",
+              "metrics": {
+                "maintainability_index": 80.05,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 78.14,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "path",
+              "qualname": "JsonRepository.path",
+              "file": "src/repository.py",
+              "line": 61,
+              "signature": "Path path(self)",
+              "metrics": {
+                "maintainability_index": 81.97,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 41.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "save",
+              "qualname": "JsonRepository.save",
+              "file": "src/repository.py",
+              "line": 66,
+              "signature": "None save(self, state: ServiceState)",
+              "metrics": {
+                "maintainability_index": 67.38,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 3,
+                "halstead_volume": 289.51,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "load",
+              "qualname": "JsonRepository.load",
+              "file": "src/repository.py",
+              "line": 75,
+              "signature": "ServiceState load(self)",
+              "metrics": {
+                "maintainability_index": 74.72,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 2,
+                "halstead_volume": 127.44,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        },
+        {
+          "kind": "function",
+          "name": "create_repository",
+          "qualname": "create_repository",
+          "file": "src/repository.py",
+          "line": 83,
+          "signature": "RentalRepository create_repository(path: Optional[str])",
+          "metrics": {
+            "maintainability_index": 78.86,
+            "cyclomatic_complexity": 2,
+            "class_coupling": 3,
+            "depth_of_inheritance": 1,
+            "source_lines": 2,
+            "executable_lines": 1,
+            "halstead_volume": 110.45,
+            "comment_lines": 0
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "requests",
+      "qualname": "src.requests",
+      "file": "src/requests.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 25.56,
+        "cyclomatic_complexity": 23,
+        "class_coupling": 8,
+        "depth_of_inheritance": 1,
+        "source_lines": 135,
+        "executable_lines": 46,
+        "halstead_volume": 3566.58,
+        "comment_lines": 49
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "RequestDesk",
+          "qualname": "RequestDesk",
+          "file": "src/requests.py",
+          "line": 27,
+          "signature": "RequestDesk",
+          "metrics": {
+            "maintainability_index": 28.1,
+            "cyclomatic_complexity": 22,
+            "class_coupling": 8,
+            "depth_of_inheritance": 1,
+            "source_lines": 109,
+            "executable_lines": 38,
+            "halstead_volume": 3148.6,
+            "comment_lines": 38
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "RequestDesk.__init__",
+              "file": "src/requests.py",
+              "line": 32,
+              "signature": "None __init__(self, registry: RentalRegistry, pricing: PriceCalculator, journal: NotificationJournal)",
+              "metrics": {
+                "maintainability_index": 69.36,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 3,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 3,
+                "halstead_volume": 151.27,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "create",
+              "qualname": "RequestDesk.create",
+              "file": "src/requests.py",
+              "line": 45,
+              "signature": "Request create(self, user: Person, units: Sequence[EquipmentUnit], start_date: date, end_date: date)",
+              "metrics": {
+                "maintainability_index": 56.05,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 3,
+                "depth_of_inheritance": 1,
+                "source_lines": 13,
+                "executable_lines": 8,
+                "halstead_volume": 613.11,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "approve",
+              "qualname": "RequestDesk.approve",
+              "file": "src/requests.py",
+              "line": 63,
+              "signature": "None approve(self, request: Request, employee: Person)",
+              "metrics": {
+                "maintainability_index": 68.66,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 3,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 3,
+                "halstead_volume": 189.99,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "reject",
+              "qualname": "RequestDesk.reject",
+              "file": "src/requests.py",
+              "line": 73,
+              "signature": "None reject(self, request: Request, employee: Person, reason: str)",
+              "metrics": {
+                "maintainability_index": 62.98,
+                "cyclomatic_complexity": 2,
+                "class_coupling": 3,
+                "depth_of_inheritance": 1,
+                "source_lines": 8,
+                "executable_lines": 4,
+                "halstead_volume": 272.48,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "_validate_period",
+              "qualname": "RequestDesk._validate_period",
+              "file": "src/requests.py",
+              "line": 86,
+              "signature": "None _validate_period(self, start_date: date, end_date: date)",
+              "metrics": {
+                "maintainability_index": 66.67,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 4,
+                "halstead_volume": 189.99,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "_validate_units",
+              "qualname": "RequestDesk._validate_units",
+              "file": "src/requests.py",
+              "line": 98,
+              "signature": "None _validate_units(self, units: Sequence[EquipmentUnit], start_date: date, end_date: date)",
+              "metrics": {
+                "maintainability_index": 64.71,
+                "cyclomatic_complexity": 3,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 7,
+                "executable_lines": 4,
+                "halstead_volume": 223.48,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "_validate_unit",
+              "qualname": "RequestDesk._validate_unit",
+              "file": "src/requests.py",
+              "line": 111,
+              "signature": "None _validate_unit(self, unit: EquipmentUnit, start_date: date, end_date: date)",
+              "metrics": {
+                "maintainability_index": 60.29,
+                "cyclomatic_complexity": 4,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 10,
+                "executable_lines": 6,
+                "halstead_volume": 300.83,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "_is_booked",
+              "qualname": "RequestDesk._is_booked",
+              "file": "src/requests.py",
+              "line": 127,
+              "signature": "bool _is_booked(self, unit: EquipmentUnit, start_date: date, end_date: date)",
+              "metrics": {
+                "maintainability_index": 60.4,
+                "cyclomatic_complexity": 6,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 9,
+                "executable_lines": 6,
+                "halstead_volume": 369.31,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "__init__",
+      "qualname": "src.serialization.__init__",
+      "file": "src/serialization/__init__.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 45.2,
+        "cyclomatic_complexity": 1,
+        "class_coupling": 0,
+        "depth_of_inheritance": 1,
+        "source_lines": 44,
+        "executable_lines": 5,
+        "halstead_volume": 485.89,
+        "comment_lines": 15
+      },
+      "children": []
+    },
+    {
+      "kind": "module",
+      "name": "equipment",
+      "qualname": "src.serialization.equipment",
+      "file": "src/serialization/equipment.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 41.4,
+        "cyclomatic_complexity": 3,
+        "class_coupling": 4,
+        "depth_of_inheritance": 1,
+        "source_lines": 46,
+        "executable_lines": 9,
+        "halstead_volume": 1353.19,
+        "comment_lines": 11
+      },
+      "children": [
+        {
+          "kind": "function",
+          "name": "unit_to_dict",
+          "qualname": "unit_to_dict",
+          "file": "src/serialization/equipment.py",
+          "line": 13,
+          "signature": "Dict[str, Any] unit_to_dict(unit: EquipmentUnit)",
+          "metrics": {
+            "maintainability_index": 53.07,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 19,
+            "executable_lines": 2,
+            "halstead_volume": 500.26,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "unit_from_dict",
+          "qualname": "unit_from_dict",
+          "file": "src/serialization/equipment.py",
+          "line": 34,
+          "signature": "EquipmentUnit unit_from_dict(data: Dict[str, Any])",
+          "metrics": {
+            "maintainability_index": 56.05,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 4,
+            "depth_of_inheritance": 1,
+            "source_lines": 13,
+            "executable_lines": 4,
+            "halstead_volume": 612.02,
+            "comment_lines": 3
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "persons",
+      "qualname": "src.serialization.persons",
+      "file": "src/serialization/persons.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 29.86,
+        "cyclomatic_complexity": 16,
+        "class_coupling": 4,
+        "depth_of_inheritance": 1,
+        "source_lines": 99,
+        "executable_lines": 25,
+        "halstead_volume": 3110.94,
+        "comment_lines": 31
+      },
+      "children": [
+        {
+          "kind": "function",
+          "name": "person_to_dict",
+          "qualname": "person_to_dict",
+          "file": "src/serialization/persons.py",
+          "line": 19,
+          "signature": "Dict[str, Any] person_to_dict(person: Person)",
+          "metrics": {
+            "maintainability_index": 50.52,
+            "cyclomatic_complexity": 5,
+            "class_coupling": 4,
+            "depth_of_inheritance": 1,
+            "source_lines": 20,
+            "executable_lines": 8,
+            "halstead_volume": 825.36,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "person_kind",
+          "qualname": "person_kind",
+          "file": "src/serialization/persons.py",
+          "line": 41,
+          "signature": "str person_kind(person: Person)",
+          "metrics": {
+            "maintainability_index": 60.93,
+            "cyclomatic_complexity": 4,
+            "class_coupling": 4,
+            "depth_of_inheritance": 1,
+            "source_lines": 11,
+            "executable_lines": 7,
+            "halstead_volume": 181.52,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "_person_from_dict",
+          "qualname": "_person_from_dict",
+          "file": "src/serialization/persons.py",
+          "line": 54,
+          "signature": "Person _person_from_dict(data: Dict[str, Any])",
+          "metrics": {
+            "maintainability_index": 65.63,
+            "cyclomatic_complexity": 2,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 6,
+            "executable_lines": 2,
+            "halstead_volume": 278.83,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "_student_from_dict",
+          "qualname": "_student_from_dict",
+          "file": "src/serialization/persons.py",
+          "line": 62,
+          "signature": "Person _student_from_dict(data: Dict[str, Any])",
+          "metrics": {
+            "maintainability_index": 66.23,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 6,
+            "executable_lines": 1,
+            "halstead_volume": 239.75,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "_teacher_from_dict",
+          "qualname": "_teacher_from_dict",
+          "file": "src/serialization/persons.py",
+          "line": 70,
+          "signature": "Person _teacher_from_dict(data: Dict[str, Any])",
+          "metrics": {
+            "maintainability_index": 66.57,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 6,
+            "executable_lines": 1,
+            "halstead_volume": 214.05,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "_employee_from_dict",
+          "qualname": "_employee_from_dict",
+          "file": "src/serialization/persons.py",
+          "line": 78,
+          "signature": "Person _employee_from_dict(data: Dict[str, Any])",
+          "metrics": {
+            "maintainability_index": 66.34,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 3,
+            "depth_of_inheritance": 1,
+            "source_lines": 6,
+            "executable_lines": 1,
+            "halstead_volume": 230.7,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "person_from_dict",
+          "qualname": "person_from_dict",
+          "file": "src/serialization/persons.py",
+          "line": 95,
+          "signature": "Person person_from_dict(data: Dict[str, Any])",
+          "metrics": {
+            "maintainability_index": 69.39,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 5,
+            "executable_lines": 1,
+            "halstead_volume": 149.34,
+            "comment_lines": 3
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "rental",
+      "qualname": "src.serialization.rental",
+      "file": "src/serialization/rental.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 27.12,
+        "cyclomatic_complexity": 17,
+        "class_coupling": 3,
+        "depth_of_inheritance": 1,
+        "source_lines": 120,
+        "executable_lines": 20,
+        "halstead_volume": 4016.8,
+        "comment_lines": 36
+      },
+      "children": [
+        {
+          "kind": "function",
+          "name": "request_to_dict",
+          "qualname": "request_to_dict",
+          "file": "src/serialization/rental.py",
+          "line": 22,
+          "signature": "Dict[str, Any] request_to_dict(request: Request, unit_index: Dict[str, EquipmentUnit])",
+          "metrics": {
+            "maintainability_index": 55.17,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 15,
+            "executable_lines": 1,
+            "halstead_volume": 478.97,
+            "comment_lines": 4
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "request_from_dict",
+          "qualname": "request_from_dict",
+          "file": "src/serialization/rental.py",
+          "line": 39,
+          "signature": "Request request_from_dict(data: Dict[str, Any], unit_index: Dict[str, EquipmentUnit])",
+          "metrics": {
+            "maintainability_index": 57.09,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 3,
+            "depth_of_inheritance": 1,
+            "source_lines": 12,
+            "executable_lines": 2,
+            "halstead_volume": 510.53,
+            "comment_lines": 4
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "issue_to_dict",
+          "qualname": "issue_to_dict",
+          "file": "src/serialization/rental.py",
+          "line": 53,
+          "signature": "Dict[str, Any] issue_to_dict(issue: Issue)",
+          "metrics": {
+            "maintainability_index": 57.83,
+            "cyclomatic_complexity": 3,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 12,
+            "executable_lines": 1,
+            "halstead_volume": 400.08,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "issue_from_dict",
+          "qualname": "issue_from_dict",
+          "file": "src/serialization/rental.py",
+          "line": 67,
+          "signature": "Issue issue_from_dict(data: Dict[str, Any], request_index: Dict[int, Request])",
+          "metrics": {
+            "maintainability_index": 58.32,
+            "cyclomatic_complexity": 2,
+            "class_coupling": 3,
+            "depth_of_inheritance": 1,
+            "source_lines": 11,
+            "executable_lines": 4,
+            "halstead_volume": 468.05,
+            "comment_lines": 4
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "fine_to_dict",
+          "qualname": "fine_to_dict",
+          "file": "src/serialization/rental.py",
+          "line": 80,
+          "signature": "Dict[str, Any] fine_to_dict(fine: Fine)",
+          "metrics": {
+            "maintainability_index": 61.8,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 10,
+            "executable_lines": 1,
+            "halstead_volume": 209.22,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "fine_from_dict",
+          "qualname": "fine_from_dict",
+          "file": "src/serialization/rental.py",
+          "line": 92,
+          "signature": "Fine fine_from_dict(data: Dict[str, Any])",
+          "metrics": {
+            "maintainability_index": 63.31,
+            "cyclomatic_complexity": 2,
+            "class_coupling": 2,
+            "depth_of_inheritance": 1,
+            "source_lines": 8,
+            "executable_lines": 4,
+            "halstead_volume": 244.42,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "notification_to_dict",
+          "qualname": "notification_to_dict",
+          "file": "src/serialization/rental.py",
+          "line": 102,
+          "signature": "Dict[str, Any] notification_to_dict(item: Notification)",
+          "metrics": {
+            "maintainability_index": 60.33,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 11,
+            "executable_lines": 1,
+            "halstead_volume": 252.62,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "notification_from_dict",
+          "qualname": "notification_from_dict",
+          "file": "src/serialization/rental.py",
+          "line": 115,
+          "signature": "Notification notification_from_dict(data: Dict[str, Any])",
+          "metrics": {
+            "maintainability_index": 66.21,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 6,
+            "executable_lines": 1,
+            "halstead_volume": 241.48,
+            "comment_lines": 3
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "state",
+      "qualname": "src.serialization.state",
+      "file": "src/serialization/state.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 33.99,
+        "cyclomatic_complexity": 17,
+        "class_coupling": 5,
+        "depth_of_inheritance": 1,
+        "source_lines": 67,
+        "executable_lines": 21,
+        "halstead_volume": 2580.39,
+        "comment_lines": 17
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "ServiceState",
+          "qualname": "ServiceState",
+          "file": "src/serialization/state.py",
+          "line": 22,
+          "signature": "ServiceState",
+          "metrics": {
+            "maintainability_index": 59.77,
+            "cyclomatic_complexity": 1,
+            "class_coupling": 5,
+            "depth_of_inheritance": 1,
+            "source_lines": 11,
+            "executable_lines": 5,
+            "halstead_volume": 303.24,
+            "comment_lines": 5
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "state_to_dict",
+          "qualname": "state_to_dict",
+          "file": "src/serialization/state.py",
+          "line": 35,
+          "signature": "Dict[str, Any] state_to_dict(state: ServiceState)",
+          "metrics": {
+            "maintainability_index": 53.82,
+            "cyclomatic_complexity": 7,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 15,
+            "executable_lines": 2,
+            "halstead_volume": 626.07,
+            "comment_lines": 3
+          },
+          "children": []
+        },
+        {
+          "kind": "function",
+          "name": "state_from_dict",
+          "qualname": "state_from_dict",
+          "file": "src/serialization/state.py",
+          "line": 52,
+          "signature": "ServiceState state_from_dict(payload: Dict[str, Any])",
+          "metrics": {
+            "maintainability_index": 51.91,
+            "cyclomatic_complexity": 8,
+            "class_coupling": 1,
+            "depth_of_inheritance": 1,
+            "source_lines": 16,
+            "executable_lines": 8,
+            "halstead_volume": 917.18,
+            "comment_lines": 3
+          },
+          "children": []
+        }
+      ]
+    },
+    {
+      "kind": "module",
+      "name": "service",
+      "qualname": "src.service",
+      "file": "src/service.py",
+      "line": 1,
+      "signature": "",
+      "metrics": {
+        "maintainability_index": 23.77,
+        "cyclomatic_complexity": 25,
+        "class_coupling": 16,
+        "depth_of_inheritance": 1,
+        "source_lines": 151,
+        "executable_lines": 34,
+        "halstead_volume": 4148.07,
+        "comment_lines": 63
+      },
+      "children": [
+        {
+          "kind": "class",
+          "name": "RentalService",
+          "qualname": "RentalService",
+          "file": "src/service.py",
+          "line": 37,
+          "signature": "RentalService",
+          "metrics": {
+            "maintainability_index": 26.96,
+            "cyclomatic_complexity": 24,
+            "class_coupling": 16,
+            "depth_of_inheritance": 1,
+            "source_lines": 115,
+            "executable_lines": 22,
+            "halstead_volume": 3555.34,
+            "comment_lines": 45
+          },
+          "children": [
+            {
+              "kind": "method",
+              "name": "__init__",
+              "qualname": "RentalService.__init__",
+              "file": "src/service.py",
+              "line": 43,
+              "signature": "None __init__(self, pricing: Optional[PriceCalculator], fines: Optional[FineCalculator], journal: Optional[NotificationJournal], registry: Optional[RentalRegistry])",
+              "metrics": {
+                "maintainability_index": 57.4,
+                "cyclomatic_complexity": 5,
+                "class_coupling": 6,
+                "depth_of_inheritance": 1,
+                "source_lines": 11,
+                "executable_lines": 5,
+                "halstead_volume": 554.48,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "units",
+              "qualname": "RentalService.units",
+              "file": "src/service.py",
+              "line": 57,
+              "signature": "List[EquipmentUnit] units(self)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "requests",
+              "qualname": "RentalService.requests",
+              "file": "src/service.py",
+              "line": 62,
+              "signature": "List[Request] requests(self)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "issues",
+              "qualname": "RentalService.issues",
+              "file": "src/service.py",
+              "line": 67,
+              "signature": "List[Issue] issues(self)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "fines",
+              "qualname": "RentalService.fines",
+              "file": "src/service.py",
+              "line": 72,
+              "signature": "List[Fine] fines(self)",
+              "metrics": {
+                "maintainability_index": 80.62,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 64.73,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "add_unit",
+              "qualname": "RentalService.add_unit",
+              "file": "src/service.py",
+              "line": 77,
+              "signature": "None add_unit(self, unit: EquipmentUnit)",
+              "metrics": {
+                "maintainability_index": 80.21,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 74.01,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "create_request",
+              "qualname": "RentalService.create_request",
+              "file": "src/service.py",
+              "line": 86,
+              "signature": "Request create_request(self, user: Person, units: Sequence[EquipmentUnit], start_date: date, end_date: date)",
+              "metrics": {
+                "maintainability_index": 73.5,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 3,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 1,
+                "halstead_volume": 189.99,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "approve_request",
+              "qualname": "RentalService.approve_request",
+              "file": "src/service.py",
+              "line": 93,
+              "signature": "None approve_request(self, request: Request, employee: Person)",
+              "metrics": {
+                "maintainability_index": 79.18,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 104.0,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "reject_request",
+              "qualname": "RentalService.reject_request",
+              "file": "src/service.py",
+              "line": 100,
+              "signature": "None reject_request(self, request: Request, employee: Person, reason: str)",
+              "metrics": {
+                "maintainability_index": 74.28,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 2,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 1,
+                "halstead_volume": 146.95,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "issue_equipment",
+              "qualname": "RentalService.issue_equipment",
+              "file": "src/service.py",
+              "line": 109,
+              "signature": "Issue issue_equipment(self, request: Request, employee: Person, issue_date: date)",
+              "metrics": {
+                "maintainability_index": 74.43,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 3,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 1,
+                "halstead_volume": 140.18,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "return_equipment",
+              "qualname": "RentalService.return_equipment",
+              "file": "src/service.py",
+              "line": 119,
+              "signature": "List[FineItem] return_equipment(self, issue: Issue, employee: Person, return_date: date, condition: ReturnCondition)",
+              "metrics": {
+                "maintainability_index": 68.66,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 4,
+                "depth_of_inheritance": 1,
+                "source_lines": 5,
+                "executable_lines": 1,
+                "halstead_volume": 189.99,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "notifications",
+              "qualname": "RentalService.notifications",
+              "file": "src/service.py",
+              "line": 129,
+              "signature": "List[Notification] notifications(self, user_id: Optional[int], kind: Optional[str])",
+              "metrics": {
+                "maintainability_index": 64.61,
+                "cyclomatic_complexity": 5,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 6,
+                "executable_lines": 3,
+                "halstead_volume": 341.84,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "report",
+              "qualname": "RentalService.report",
+              "file": "src/service.py",
+              "line": 138,
+              "signature": "str report(self)",
+              "metrics": {
+                "maintainability_index": 74.73,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 1,
+                "halstead_volume": 126.71,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "state",
+              "qualname": "RentalService.state",
+              "file": "src/service.py",
+              "line": 144,
+              "signature": "ServiceState state(self)",
+              "metrics": {
+                "maintainability_index": 79.7,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 2,
+                "executable_lines": 1,
+                "halstead_volume": 87.57,
+                "comment_lines": 0
+              },
+              "children": []
+            },
+            {
+              "kind": "method",
+              "name": "restore",
+              "qualname": "RentalService.restore",
+              "file": "src/service.py",
+              "line": 149,
+              "signature": "None restore(self, state: ServiceState)",
+              "metrics": {
+                "maintainability_index": 74.54,
+                "cyclomatic_complexity": 1,
+                "class_coupling": 1,
+                "depth_of_inheritance": 1,
+                "source_lines": 3,
+                "executable_lines": 2,
+                "halstead_volume": 134.89,
+                "comment_lines": 0
+              },
+              "children": []
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "violations": []
+}
