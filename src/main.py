@@ -1,38 +1,33 @@
 ## @file main.py
 #  @brief Точка входа приложения «АрендаТех»
 #  @author Арсланов В.Д.
-#  @date 2025-01-01
-#  @version 1.0
+#  @date 2026-02-10
+#  @version 2.0
 #
 #  @par Использует файлы:
-#  - @ref domain.py
-#  - @ref service.py
+#  - @ref cli.py
+#
+#  @details Запуск без аргументов выполняет демонстрационный сценарий,
+#  запуск с аргументами — команду интерфейса командной строки:
+#  @code
+#  python -m src.main
+#  python -m src.main demo
+#  python -m src.main report --state data/state.json
+#  @endcode
 
-from src.domain import Student, EquipmentModel, EquipmentUnit
-from src.service import RentalService
+from __future__ import annotations
+import sys
+from typing import Optional, Sequence
+
+from .cli import main as cli_main
 
 
 ## @brief Точка входа
+#  @param argv Аргументы командной строки
 #  @return Код возврата
-def main() -> int:
-    student = Student(1, "Иванов И.И.", "ivanov@example.com",
-                      "+79990000000", "12345", "ИТ-01", "ФИТ")
-    model = EquipmentModel(1, "Ноутбук Lenovo ThinkPad", "Ноутбуки",
-                           "16GB/512GB", 500.0)
-    unit = EquipmentUnit(1, "INV-001", model, "Доступна", True)
-
-    service = RentalService()
-    request = service.create_request(student, [unit], "2025-01-10", "2025-01-15")
-    print(f"Студент: {student.get_fio()}, группа: {student.get_group()}")
-    print(f"Модель: {model.get_name()}, цена: {model.get_daily_rate()}")
-    print(f"Заявка: {request.get_status()}")
-
-    issue = service.issue_equipment(request, "2025-01-10")
-    print(f"После выдачи: {request.get_status()}")
-
-    service.return_equipment(issue, "2025-01-15", "Хорошее", 0.0)
-    print("Возврат оформлен")
-    return 0
+def main(argv: Optional[Sequence[str]] = None) -> int:
+    arguments = list(sys.argv[1:] if argv is None else argv)
+    return cli_main(arguments if arguments else ["demo"])
 
 
 if __name__ == "__main__":

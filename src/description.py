@@ -1,30 +1,88 @@
-## @mainpage Приложение «АрендаТех»
+## @mainpage Приложение «АрендаТех» (версия 2.0)
 #  @brief Сервис аренды техники для учебных учреждений
+#  @author Арсланов В.Д.
+#  @date 2026-02-10
+#  @version 2.0
 #
 #  @details Программный комплекс предназначен для автоматизации выдачи
 #  во временное пользование технических средств (ноутбуков, проекторов,
-#  фото-/видеотехники) студентам и преподавателям.
+#  фото-/видеотехники) студентам и преподавателям: создание и согласование
+#  заявок, выдача и возврат техники, расчёт стоимости аренды, начисление
+#  штрафов, уведомления пользователей и отчётность.
 #
-#  @par Использует классы:
-#  - @ref Person
-#  - @ref Student
-#  - @ref Teacher
-#  - @ref Administrator
-#  - @ref Technician
-#  - @ref EquipmentModel
-#  - @ref EquipmentUnit
-#  - @ref Request
-#  - @ref Issue
-#  - @ref Fine
-#  - @ref Notification
+#  @par История версий:
+#  - v1.0 (лабораторные работы №1–2) — требования по ГОСТ 19.201-78,
+#    модель прецедентов и классов, классы предметной области, документация
+#    Doxygen;
+#  - v2.0 (лабораторная работа №3) — расчёт стоимости, штрафы, статусы
+#    заявок, JSON-хранилище, интерфейс командной строки, 56 unit-тестов
+#    и рефакторинг по метрикам кода (6 нарушений порогов → 0).
 #
-#  @par Содержит файлы:
-#  - @ref domain.py
-#  - @ref service.py
-#  - @ref main.py
+#  @par Архитектура:
+#  - предметная область — @ref enums.py, @ref errors.py, @ref people.py,
+#    @ref equipment.py, @ref request.py, @ref issue.py, @ref fine.py,
+#    @ref notification.py;
+#  - бизнес-правила — @ref pricing.py, @ref fines.py, @ref permissions.py;
+#  - сценарии использования — @ref requests.py, @ref issues.py, @ref registry.py;
+#  - инфраструктура — @ref notifications.py, @ref reports.py, @ref repository.py,
+#    @ref serialization/__init__.py;
+#  - точка входа и интерфейс — @ref service.py, @ref cli.py, @ref main.py,
+#    @ref demo.py.
 #
-#  @page Database Работа с базой данных
-#  @brief Модуль подключения и запросов к PostgreSQL
+#  @par Документация:
+#  - @ref database_page — работа с базой данных (план развития);
+#  - @ref ui_page — пользовательский интерфейс (план развития);
+#  - @ref metrics_page — метрики кода и результаты измерений.
 #
-#  @page UI Пользовательский интерфейс
-#  @brief Веб-интерфейс на React
+#  @par Быстрый старт:
+#  @code
+#  pip install -r requirements.txt
+#  python -m src.main            # демонстрационный сценарий
+#  python -m pytest -q           # unit-тесты
+#  python metrics/code_metrics.py src --root . --out-dir metrics/reports/current
+#  @endcode
+#
+#  @page database_page Работа с базой данных
+#  @brief Перспективное направление: хранение состояния в PostgreSQL
+#
+#  @details В версии 2.0 состояние сервиса сохраняется в JSON через
+#  @ref repository.py (интерфейс @c RentalRepository, реализации
+#  @c InMemoryRepository и @c JsonRepository). Для перехода на СУБД достаточно
+#  реализовать интерфейс @c RentalRepository и передать реализацию в
+#  @c RentalService: бизнес-логика от способа хранения не зависит.
+#
+#  @page ui_page Пользовательский интерфейс
+#  @brief Перспективное направление: веб-интерфейс на React
+#
+#  @details Сервисный слой (@c RentalService) не зависит от способа
+#  представления, поэтому веб-интерфейс может вызывать те же сценарии
+#  (@c RequestDesk, @c IssueDesk), что и интерфейс командной строки.
+#
+#  @page metrics_page Метрики кода
+#  @brief Методика измерения и результаты (лабораторная работа №3)
+#
+#  @details Метрики вычисляет инструмент @c metrics/code_metrics.py:
+#  индекс сопровождаемости (MI), цикломатическая сложность (CC), глубина
+#  наследования (DIT), связность классов, строки исходного и исполняемого
+#  кода, объём Холстеда. Пороговые правила CA1501, CA1502, CA1505, CA1506
+#  задаются в @c metrics/CodeMetricsConfig.txt.
+#
+#  @par Цикл работы с метриками:
+#  - измерить метрики текущей версии и сохранить отчёт;
+#  - проанализировать нарушения порогов и самые сложные методы;
+#  - отрефакторить код;
+#  - измерить метрики повторно и сравнить результаты
+#    (@c metrics/compare_metrics.py строит таблицы и диаграммы).
+#
+#  @par Результаты измерений:
+#  | Версия | Нарушений | Макс. CC | Мин. MI модуля |
+#  |---|---|---|---|
+#  | v1.0 (ЛР2) | 1 | 3 | 13,7 |
+#  | v2.0 черновик | 6 | 16 | 3,1 |
+#  | v2.0 итог | 0 | 9 | 21,0 |
+#
+#  @par Полные отчёты:
+#  - @c metrics/reports/v2.0/code-metrics-v2.0.md — сводка по модулям;
+#  - @c metrics/reports/v2.0/code-metrics-v2.0.csv — метрики по методам;
+#  - @c metrics/reports/comparison/comparison.md — сравнение версий;
+#  - @c reports/ЛР3_Отчет_метрики_кода.docx — отчёт по лабораторной работе.
