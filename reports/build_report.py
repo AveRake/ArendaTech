@@ -231,6 +231,10 @@ def add_table(document: Document, headers: Sequence[str],
         shade_cell(header_cells[index], "E8EDF3")
     for row in rows:
         cells = table.add_row().cells
+        # запрещаем разрыв строки таблицы между страницами
+        row_props = table.rows[-1]._tr.get_or_add_trPr()
+        cant_split = OxmlElement("w:cantSplit")
+        row_props.append(cant_split)
         for index, value in enumerate(row):
             cells[index].text = ""
             paragraph = cells[index].paragraphs[0]
@@ -354,7 +358,17 @@ def build_title_page(document: Document) -> None:
         run = paragraph.add_run(line)
         run.font.name = FONT
         run.font.size = Pt(BODY_SIZE)
-    for _ in range(4):
+    document.add_paragraph()
+    paragraph = document.add_paragraph()
+    paragraph.alignment = WD_ALIGN_PARAGRAPH.CENTER
+    paragraph.paragraph_format.first_line_indent = Cm(0)
+    paragraph.paragraph_format.space_after = Pt(2)
+    run = paragraph.add_run("Ответственный за лабораторную работу №3 — "
+                            "Ильин Андрей (разработчик)")
+    run.font.name = FONT
+    run.font.size = Pt(BODY_SIZE)
+    run.italic = True
+    for _ in range(3):
         document.add_paragraph()
     for text in ["Проверил: Востриков А. В.", "Москва, 2026"]:
         paragraph = document.add_paragraph()
@@ -396,17 +410,6 @@ def build_intro(document: Document) -> None:
          "заявок, хранение состояния, интерфейс командной строки), подготовить "
          "unit-тесты и обновить README с инструкцией по запуску.", space_before=6)
 
-    table_caption(document, "Таблица 1 — Инструменты, использованные в работе")
-    add_table(document,
-              ["Инструмент", "Версия", "Назначение"],
-              [["Python", "3.10", "язык реализации проекта и анализатора метрик"],
-               ["metrics/code_metrics.py", "2.0", "собственный анализатор метрик кода"],
-               ["metrics/compare_metrics.py", "1.0", "сравнение версий, диаграммы"],
-               ["pytest", "9.1", "запуск unit-тестов (56 тестов)"],
-               ["Doxygen + Graphviz", "1.18", "документация по исходному коду"]],
-              [5.2, 2.0, 9.3], font_size=10.5,
-              align=["left", "right", "left"])
-
     body(document,
          "Анализаторы качества кода .NET (правила CA1501, CA1502, CA1505, CA1506 и "
          "команда «Анализ → Рассчитать метрики кода» в Visual Studio) применимы "
@@ -418,6 +421,51 @@ def build_intro(document: Document) -> None:
          "отчёта Metrics.exe (CodeMetricsReport), поэтому результаты сопоставимы "
          "с отчётами .NET-инструментов.", space_before=6)
 
+    body(document,
+         "Проект «АрендаТех» разрабатывается командой из трёх человек. Лабораторная "
+         "работа №3 относится к зоне ответственности разработчика: основной объём "
+         "работ — реализация версии 2.0 и рефакторинг кода по метрикам — выполнен "
+         "Ильиным Андреем; аналитик участвовал в постановке задачи, обосновании "
+         "порогов и подготовке документации, тестировщик — в разработке тестов, "
+         "поиске дефектов и проверке отчётов о метриках. Вклад участников приведён "
+         "в таблице 1.", space_before=6)
+
+    table_caption(document,
+                  "Таблица 1 — Состав команды и вклад в лабораторную работу №3")
+    add_table(document,
+              ["Участник", "Роль", "Вклад в работу"],
+              [["Ильин Андрей",
+                "Разработчик — ответственный за ЛР3",
+                "архитектура версии 2.0 (домен, расчёт стоимости, штрафы, сценарии "
+                "заявок и выдач, сервис-фасад), анализатор метрик "
+                "metrics/code_metrics.py, рефакторинг по результатам измерений, "
+                "интерфейс командной строки и демонстрационный сценарий"],
+               ["Арсланов Вадим",
+                "Аналитик, менеджер",
+                "постановка задачи и анализ требований, обоснование порогов "
+                "CA1501/CA1502/CA1505/CA1506 в metrics/CodeMetricsConfig.txt, "
+                "структура проекта и README, генератор отчёта "
+                "reports/build_report.py, документация Doxygen"],
+               ["Колганов Иван",
+                "Тестировщик",
+                "unit-тесты (56 тестов), тесты анализатора метрик, поиск и описание "
+                "дефектов (неработоспособный набор тестов из ЛР2, ошибка загрузки "
+                "состояния), проверка отчётов о метриках и сравнения версий"]],
+              [3.3, 3.7, 9.5], font_size=9.5,
+              align=["left", "left", "left"])
+
+    table_caption(document, "Таблица 2 — Инструменты, использованные в работе")
+    add_table(document,
+              ["Инструмент", "Версия", "Назначение"],
+              [["Python", "3.10", "язык реализации проекта и анализатора метрик"],
+               ["metrics/code_metrics.py", "2.0", "собственный анализатор метрик кода"],
+               ["metrics/compare_metrics.py", "1.0", "сравнение версий, диаграммы"],
+               ["pytest", "9.1", "запуск unit-тестов (56 тестов)"],
+               ["Doxygen + Graphviz", "1.18", "документация по исходному коду"]],
+              [5.2, 2.0, 9.3], font_size=10.5,
+              align=["left", "right", "left"])
+
+
 
 ## @brief Раздел 3: теоретические сведения о метриках
 def build_theory(document: Document) -> None:
@@ -428,7 +476,7 @@ def build_theory(document: Document) -> None:
          "метрик, которые Visual Studio вычисляет для управляемого кода, а также "
          "две дополнительные метрики, полезные при анализе.")
 
-    table_caption(document, "Таблица 2 — Измеряемые метрики")
+    table_caption(document, "Таблица 3 — Измеряемые метрики")
     add_table(document,
               ["Метрика", "Что измеряет", "Направление улучшения"],
               [["Maintainability Index (MI)",
@@ -481,7 +529,7 @@ def build_theory(document: Document) -> None:
          "способ — файл metrics/CodeMetricsConfig.txt, где для каждого правила "
          "задаётся порог в формате «правило: значение». Анализатор читает этот файл "
          "и формирует список нарушений.")
-    table_caption(document, "Таблица 3 — Настроенные пороговые правила")
+    table_caption(document, "Таблица 4 — Настроенные пороговые правила")
     add_table(document,
               ["Правило", "Смысл", "Порог", "Обоснование порога"],
               [["CA1501", "избыточная глубина наследования", "3",
@@ -563,7 +611,7 @@ def build_method(document: Document) -> None:
     ], caption="Листинг 2 — Команды запуска измерений")
 
     body(document, "Отчёт сохраняется в четырёх форматах:")
-    table_caption(document, "Таблица 4 — Форматы отчётов о метриках")
+    table_caption(document, "Таблица 5 — Форматы отчётов о метриках")
     add_table(document,
               ["Файл", "Содержание"],
               [["*.xml", "дерево CodeMetricsReport (как у Metrics.exe) и блок RuleViolations"],
@@ -671,7 +719,7 @@ def build_before(document: Document) -> None:
          "Исходная версия содержит четыре модуля предметной области и сервиса. "
          "Сложность методов минимальна, однако домен сосредоточен в одном файле "
          "объёмом 293 строки, что и определило низкий индекс сопровождаемости.")
-    module_table(document, V1, "Таблица 5 — Метрики версии 1.0")
+    module_table(document, V1, "Таблица 6 — Метрики версии 1.0")
     body(document,
          "Нарушение одно: правило CA1505 для модуля domain.py — индекс "
          "сопровождаемости "
@@ -693,13 +741,13 @@ def build_before(document: Document) -> None:
          "повреждение и утерю, статусы заявок, JSON-хранилище, отчётность) была "
          "реализована «первым проходом» — внутри класса RentalService и модуля "
          "domain.py. Метрики немедленно показали деградацию.")
-    module_table(document, RAW, "Таблица 6 — Метрики первой реализации v2.0")
+    module_table(document, RAW, "Таблица 7 — Метрики первой реализации v2.0")
     body(document,
          "Получено шесть нарушений: два модуля оказались в красной зоне индекса "
          "сопровождаемости, а три метода превысили порог цикломатической сложности.")
-    violations_table(document, RAW, "Таблица 7 — Нарушения в первой реализации v2.0")
+    violations_table(document, RAW, "Таблица 8 — Нарушения в первой реализации v2.0")
     top_table(document, RAW_ROWS,
-              "Таблица 8 — Самые сложные методы первой реализации")
+              "Таблица 9 — Самые сложные методы первой реализации")
 
 
 ## @brief Раздел 6: анализ и оптимизация
@@ -709,7 +757,7 @@ def build_optimization(document: Document) -> None:
          "Анализ метрик позволил сформулировать четыре причины деградации и "
          "соответствующие им направления рефакторинга.")
 
-    table_caption(document, "Таблица 9 — Проблемы, выявленные метриками, и решения")
+    table_caption(document, "Таблица 10 — Проблемы, выявленные метриками, и решения")
     add_table(document,
               ["Проблема", "Метрика", "Решение"],
               [["return_equipment содержит 16 ветвей: просрочка, три состояния "
@@ -892,7 +940,7 @@ def build_after(document: Document) -> None:
     body(document,
          "После рефакторинга метрики перестроены тем же инструментом с теми же "
          "порогами. Нарушений правил не осталось ни одного.")
-    table_caption(document, "Таблица 10 — Сравнение метрик трёх версий проекта")
+    table_caption(document, "Таблица 11 — Сравнение метрик трёх версий проекта")
     keys = [
         ("modules", "Модулей"),
         ("classes", "Классов"),
@@ -933,17 +981,17 @@ def build_after(document: Document) -> None:
     figure_caption(document, "Рисунок 2 — Сложность и нарушения правил по версиям")
 
     body(document,
-         "Метрики итоговой версии по модулям приведены в таблице 11: все 29 модулей "
+         "Метрики итоговой версии по модулям приведены в таблице 12: все 29 модулей "
          "находятся в зелёной зоне, максимальная связанность класса (16) не превышает "
          "порог 20 и относится к фасаду сервиса, который по определению агрегирует "
          "типы предметной области.")
-    module_table(document, FIN, "Таблица 11 — Метрики итоговой версии 2.0")
+    module_table(document, FIN, "Таблица 12 — Метрики итоговой версии 2.0")
 
     body(document,
          "Сопоставление ключевых методов, которые нарушали порог в черновике, "
-         "показано в таблице 12. Сложность снизилась за счёт выделения правил и "
+         "показано в таблице 13. Сложность снизилась за счёт выделения правил и "
          "сценариев: каждый метод теперь отвечает за одну операцию.", space_before=6)
-    table_caption(document, "Таблица 12 — Цикломатическая сложность ключевых методов")
+    table_caption(document, "Таблица 13 — Цикломатическая сложность ключевых методов")
     raw_metrics = find_metrics(RAW_ROWS, "RentalService.return_equipment")
     final_metrics = find_metrics(FIN_ROWS, "IssueDesk.return_equipment")
     pairs = [
@@ -1011,8 +1059,7 @@ def build_conclusion(document: Document) -> None:
 
 ## @brief Список источников
 def build_sources(document: Document) -> None:
-    document.add_paragraph().add_run().add_break(WD_BREAK.PAGE)
-    heading(document, "СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ")
+    heading(document, "СПИСОК ИСПОЛЬЗОВАННЫХ ИСТОЧНИКОВ", space_before=18)
     sources = [
         "Методические указания к лабораторной работе №3 «Метрики программного кода» "
         "по дисциплине «Технологии разработки программного обеспечения». — М.: НИУ ВШЭ, 2023.",
